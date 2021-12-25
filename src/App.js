@@ -1,6 +1,8 @@
 import "./global/global.css";
 import "./global/palette.css";
-import { Container, Nav } from "./components/";
+
+import Container from "./components/Container";
+import Nav from "./components/Nav";
 
 function App() {
   return (
