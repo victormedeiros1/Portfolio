@@ -4,14 +4,20 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-a {
-  text-decoration: none;
+body {
+  background-image: var(--background-light);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 main,
 section {
   width: 100%;
   max-width: 1200px;
   position: relative;
+}
+a {
+  text-decoration: none;
 }
 
 /* ===== Concert One ===== */

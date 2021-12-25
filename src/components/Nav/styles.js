@@ -4,6 +4,7 @@ export const NavStyles = styled.nav`
   position: fixed;
   width: 100%;
   max-width: 1200px;
+  z-index: 9999;
 
   .navbar {
     &--list {

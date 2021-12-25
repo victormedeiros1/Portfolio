@@ -1,0 +1,8 @@
+* {
+  --dark: #2f2f2f;
+  --white: #eeece9;
+  --green: #27ca54;
+  --lightgray: #bbbbbb;
+  --background-dark: url(/public/images/background-dark.png);
+  --background-light: url(/public/images/background-light.png);
+}

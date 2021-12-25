@@ -4,6 +4,7 @@ export const MainStyles = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 800px;
   min-height: 500px;
   height: 100vh;
 
