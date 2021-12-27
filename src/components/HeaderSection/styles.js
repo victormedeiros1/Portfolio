@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderSectionStyles = styled.header`
+  width: auto;
   margin-bottom: 50px;
 
   .header-section {

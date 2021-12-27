@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const ContactStyles = styled.footer`
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   .contact {
     &--left {
-      flex: 1;
-
+      margin-right: 100px;
+      padding-right: 50px;
+      border-right: 1px solid var(--lightgray);
       &--medias {
         &--list {
           list-style: none;
@@ -32,9 +34,6 @@ export const ContactStyles = styled.footer`
           }
         }
       }
-    }
-    &--right {
-      flex: 1;
     }
   }
 `;
