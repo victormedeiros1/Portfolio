@@ -4,9 +4,13 @@ import { SkillsStyles } from "./styles";
 
 function Skills() {
   return (
-    <SkillsStyles>
-      <img src="/images/circle-s.svg" />
-      <img src="/images/circle-b.svg" />
+    <SkillsStyles className="skills">
+      <h3 className="skills--title">SKILLS</h3>
+      <img
+        className="skills--circle-s"
+        alt="small circle"
+        src="/images/skills.svg"
+      />
     </SkillsStyles>
   );
 }
