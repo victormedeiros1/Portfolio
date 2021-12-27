@@ -5,6 +5,7 @@ import Container from "./components/Container";
 import Main from "./components/Main";
 import Nav from "./components/Nav";
 import AboutMe from "./components/AboutMe";
+import Works from "./components/Works";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Nav></Nav>
         <Main></Main>
         <AboutMe></AboutMe>
+        <Works></Works>
       </Container>
     </div>
   );
