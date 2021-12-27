@@ -4,7 +4,8 @@ export const NavStyles = styled.nav`
   position: fixed;
   width: 100%;
   top: 50px;
-  max-width: 1200px;
+  max-width: 1400px;
+  margin-right: 20px;
   z-index: 9999;
 
   .navbar {
