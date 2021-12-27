@@ -3,6 +3,10 @@
   --white: #eeece9;
   --green: #27ca54;
   --lightgray: #bbbbbb;
+  --rose: #fd4788;
+  --blue: #475aff;
+  --yellow: #fbd00f;
+
   --background-dark: url(/public/images/background-dark.png);
   --background-light: url(/public/images/background-light.png);
 }
