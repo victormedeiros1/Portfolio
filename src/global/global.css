@@ -10,7 +10,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-main,
+main {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
 section {
   position: relative;
   width: 100%;
