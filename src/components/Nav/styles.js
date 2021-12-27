@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const NavStyles = styled.nav`
   position: fixed;
   width: 100%;
+  top: 50px;
   max-width: 1200px;
   z-index: 9999;
 
   .navbar {
     &--list {
-      margin-top: 50px;
       text-align: end;
 
       &--bars {
