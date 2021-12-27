@@ -15,7 +15,8 @@ main {
   width: 100%;
   max-width: 1200px;
 }
-section {
+section,
+footer {
   position: relative;
   width: 100%;
   max-width: 1200px;
