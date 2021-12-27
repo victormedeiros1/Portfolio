@@ -12,12 +12,39 @@ body {
 }
 main,
 section {
+  position: relative;
   width: 100%;
   max-width: 1200px;
-  position: relative;
+  margin: 100px 0;
 }
 a {
   text-decoration: none;
+}
+
+/* Margins */
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 /* ===== Concert One ===== */
