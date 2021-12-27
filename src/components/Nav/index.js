@@ -3,8 +3,8 @@ import { NavStyles } from "./styles";
 
 function Nav() {
   return (
-    <NavStyles class="navbar">
-      <ul class="navbar--list">
+    <NavStyles className="navbar">
+      <ul className="navbar--list">
         <img
           className="navbar--list--bars"
           src="/images/bars-top-s.svg"

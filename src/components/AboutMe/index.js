@@ -4,10 +4,10 @@ import { AboutMeStyles } from "./styles";
 import HeaderSection from "../HeaderSection";
 function AboutMe({ children }) {
   return (
-    <AboutMeStyles class="about-me">
+    <AboutMeStyles className="about-me">
       <div className="about-me--texts">
         <HeaderSection title="ABOUT ME" />
-        <h4 class="about-me--texts--title">
+        <h4 className="about-me--texts--title">
           Hi, I’m José Victor. Nice to meet you!
         </h4>
         <p className="about-me--texts--paragraph">
