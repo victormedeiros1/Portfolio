@@ -12,7 +12,12 @@ function Contact() {
         <div className="contact--left--medias">
           <ul className="contact--left--medias--list">
             <li className="contact--left--medias--list--item">
-              <a href="#" className="contact--left--medias--list--item--link">
+              <a
+                href="https://www.linkedin.com/in/jos%C3%A9-victor-dev/"
+                target="_blank"
+                className="contact--left--medias--list--item--link"
+                rel="noreferrer"
+              >
                 <img
                   alt="linkedin icon"
                   className="contact--left--medias--list--item--link--icon"
@@ -22,7 +27,12 @@ function Contact() {
               </a>
             </li>
             <li className="contact--left--medias--list--item">
-              <a href="#" className="contact--left--medias--list--item--link">
+              <a
+                href="https://github.com/victormedeiros1"
+                target="_blank"
+                className="contact--left--medias--list--item--link"
+                rel="noreferrer"
+              >
                 <img
                   alt="github icon"
                   className="contact--left--medias--list--item--link--icon"
@@ -32,13 +42,33 @@ function Contact() {
               </a>
             </li>
             <li className="contact--left--medias--list--item">
-              <a href="#" className="contact--left--medias--list--item--link">
+              <a
+                href="https://dribbble.com/victormedeiros1"
+                target="_blank"
+                className="contact--left--medias--list--item--link"
+                rel="noreferrer"
+              >
                 <img
                   alt="dribbble icon"
                   className="contact--left--medias--list--item--link--icon"
                   src="/images/medias/dribbble.svg"
                 />
                 Dribbble
+              </a>
+            </li>
+            <li className="contact--left--medias--list--item">
+              <a
+                href="https://www.instagram.com/victor_mdrss/"
+                target="_blank"
+                className="contact--left--medias--list--item--link"
+                rel="noreferrer"
+              >
+                <img
+                  alt="instagram icon"
+                  className="contact--left--medias--list--item--link--icon"
+                  src="/images/medias/instagram.svg"
+                />
+                Instagram
               </a>
             </li>
           </ul>

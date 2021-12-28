@@ -13,7 +13,7 @@ function Main() {
             <br /> VICTOR
           </h1>
           <h2 className="main--header--left--h2">FRONT END DEVELOPER</h2>
-          <a className="main--header--left--discover" href="#">
+          <a className="main--header--left--discover" href="#about-me">
             DISCOVER
           </a>
         </div>
