@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const NavStyles = styled.nav`
   position: fixed;
-  width: 100%;
+  width: 100px;
   top: 50px;
-  max-width: 1400px;
+  right: 0;
   margin-right: 20px;
   z-index: 9999;
 
