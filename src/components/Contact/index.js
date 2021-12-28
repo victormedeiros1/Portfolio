@@ -6,7 +6,7 @@ import BigLogo from "../BigLogo";
 
 function Contact() {
   return (
-    <ContactStyles className="contact">
+    <ContactStyles id="contact" className="contact">
       <div className="contact--left">
         <HeaderSection title="CONTACT" />
         <div className="contact--left--medias">

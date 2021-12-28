@@ -2,9 +2,9 @@ import React from "react";
 
 import { AboutMeStyles } from "./styles";
 import HeaderSection from "../HeaderSection";
-function AboutMe({ children }) {
+function AboutMe() {
   return (
-    <AboutMeStyles className="about-me">
+    <AboutMeStyles id="about-me" className="about-me">
       <div className="about-me--texts">
         <HeaderSection title="ABOUT ME" />
         <h4 className="about-me--texts--title">

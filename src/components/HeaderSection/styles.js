@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderSectionStyles = styled.header`
   width: auto;
-  margin-bottom: 50px;
+  margin: 50px 0;
 
   .header-section {
     &--title {

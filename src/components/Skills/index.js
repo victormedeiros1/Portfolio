@@ -4,7 +4,7 @@ import { SkillsStyles } from "./styles";
 
 function Skills() {
   return (
-    <SkillsStyles className="skills">
+    <SkillsStyles id="skills" className="skills">
       <h3 className="skills--title">SKILLS</h3>
       <img
         className="skills--circle-s"

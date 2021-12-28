@@ -5,7 +5,7 @@ import HeaderSection from "../HeaderSection";
 
 function Works() {
   return (
-    <WorksStyles className="works">
+    <WorksStyles id="works" className="works">
       <HeaderSection title="WORKS" />
       <div className="works--row">
         <div className="works--row--item--omega works--row--item works--row--item__size-1 mr-50">

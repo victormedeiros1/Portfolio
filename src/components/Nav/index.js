@@ -11,12 +11,12 @@ function Nav() {
           alt="bars-top"
         />
         <li className="navbar--list--item">
-          <a className="navbar--list--item--link" href="#">
+          <a className="navbar--list--item--link" href="#about-me">
             ABOUT ME
           </a>
         </li>
         <li className="navbar--list--item">
-          <a className="navbar--list--item--link" href="#">
+          <a className="navbar--list--item--link" href="#works">
             WORKS
           </a>
         </li>
@@ -26,12 +26,12 @@ function Nav() {
           </a>
         </li>
         <li className="navbar--list--item">
-          <a className="navbar--list--item--link" href="#">
+          <a className="navbar--list--item--link" href="#skills">
             SKILLS
           </a>
         </li>
         <li className="navbar--list--item">
-          <a className="navbar--list--item--link" href="#">
+          <a className="navbar--list--item--link" href="#contact">
             CONTACT
           </a>
         </li>

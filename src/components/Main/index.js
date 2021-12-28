@@ -5,7 +5,7 @@ import BigLogo from "../BigLogo";
 
 function Main() {
   return (
-    <MainStyles className="main">
+    <MainStyles id="main" className="main">
       <header className="main--header">
         <div className="main--header--left">
           <h1 className="main--header--left--h1">

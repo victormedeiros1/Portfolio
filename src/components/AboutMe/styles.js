@@ -25,10 +25,6 @@ export const AboutMeStyles = styled.section`
     &--profile-picture {
       text-align: center;
       flex: 1;
-
-      &--photo {
-        margin-top: -50px;
-      }
     }
   }
 `;
