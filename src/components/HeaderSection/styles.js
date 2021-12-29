@@ -7,9 +7,14 @@ export const HeaderSectionStyles = styled.header`
   .header-section {
     &--title {
       font-family: "Concert One", sans-serif;
-      font-size: 80px;
+      font-size: 50px;
       line-height: 62px;
       color: var(--green);
+
+      @media (min-width: 800px) {
+        font-size: 80px;
+        line-height: 62px;
+      }
     }
     &--bars {
       width: 150px;
