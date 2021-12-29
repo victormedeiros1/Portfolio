@@ -11,32 +11,46 @@ export const MainStyles = styled.main`
   .main {
     &--header {
       display: flex;
-      flex-direction: row;
+      flex-direction: column-reverse;
+
+      @media (min-width: 800px) {
+        flex-direction: row;
+      }
 
       &--left {
         display: flex;
         flex-direction: column;
-        align-items: end;
         justify-content: center;
-        border-right: 1px solid var(--lightgray);
-        text-align: end;
-        padding-right: 50px;
-        margin-right: 100px;
+        align-items: center;
+        text-align: center;
+
+        @media (min-width: 800px) {
+          align-items: end;
+          text-align: end;
+          border-right: 1px solid var(--lightgray);
+          padding-right: 50px;
+          margin-right: 100px;
+        }
 
         &--h1 {
+          font-size: 60px;
+          line-height: 60px;
           color: var(--dark);
           font-family: "Concert One", sans-serif;
-          margin-bottom: 20px;
+          margin: 30px 0 20px 0;
 
-          @media screen and (min-width: 800px) {
+          @media (min-width: 800px) {
             font-size: 100px;
             line-height: 100px;
+            margin: 0 0 20px 0;
           }
         }
         &--h2 {
           color: var(--green);
           font-family: "Concert One", sans-serif;
           margin-bottom: 50px;
+          font-size: 30px;
+          line-height: 24px;
         }
         &--discover {
           color: var(--dark);
@@ -57,8 +71,11 @@ export const MainStyles = styled.main`
           }
         }
       }
-
       &--right {
+        @media (max-width: 800px) {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }
