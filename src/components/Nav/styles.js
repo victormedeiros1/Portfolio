@@ -27,6 +27,14 @@ export const NavStyles = styled.nav`
           &:hover {
             color: var(--green);
           }
+          &__disabled {
+            cursor: default;
+            opacity: 0.3;
+
+            &:hover {
+              color: initial;
+            }
+          }
         }
       }
     }

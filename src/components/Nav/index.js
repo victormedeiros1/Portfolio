@@ -21,7 +21,11 @@ function Nav() {
           </a>
         </li>
         <li className="navbar--list--item">
-          <a className="navbar--list--item--link" href="#">
+          <a
+            className="navbar--list--item--link navbar--list--item--link__disabled"
+            disabled
+            href="#"
+          >
             DARK
           </a>
         </li>
