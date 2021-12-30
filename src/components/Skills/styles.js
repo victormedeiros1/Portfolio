@@ -10,11 +10,17 @@ export const SkillsStyles = styled.section`
       position: absolute;
       color: var(--green);
       font-family: "Concert One", sans-serif;
-      font-size: 60px;
-      line-height: 47px;
+      font-size: 48px;
+      line-height: 34px;
+
+      @media (min-width: 800px) {
+        font-size: 60px;
+        line-height: 47px;
+      }
     }
-    &--circle-s {
+    &--circle {
       width: 100%;
+      max-width: 700px;
     }
   }
 `;
