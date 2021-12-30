@@ -21,7 +21,7 @@ function MetaTagsHead() {
       />
       <meta
         property="og:image"
-        content="https://www.josevictor.dev/images/ogImage.png"
+        content="https://www.josevictor.dev/ogImage.png"
       />
 
       <meta name="twitter:card" content="summary_large_image" />
@@ -34,7 +34,7 @@ function MetaTagsHead() {
       />
       <meta
         name="twitter:image"
-        content="https://www.josevictor.dev/images/ogImage.png"
+        content="https://www.josevictor.dev/ogImage.png"
       />
 
       <meta name="author" content="José Victor" />
