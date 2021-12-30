@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const NavStyles = styled.nav`
   position: fixed;
   width: 100px;
-  top: 50px;
+  top: 20px;
   right: 0;
   margin-right: 20px;
   z-index: 9999;
+
+  @media (min-width: 800px) {
+    top: 50px;
+  }
 
   .navbar {
     &--list {
