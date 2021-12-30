@@ -21,7 +21,7 @@ function Works() {
           <img
             alt="Omega Movimento Luz Livre"
             className="works--row--item--image"
-            src="/images/works/omega.png"
+            src="./images/works/omega.png"
           />
         </div>
 
@@ -37,7 +37,7 @@ function Works() {
           <img
             alt="Almanaque Tudum Netflix"
             className="works--row--item--image"
-            src="/images/works/netflix.png"
+            src="./images/works/netflix.png"
           />
         </div>
       </div>
@@ -56,7 +56,7 @@ function Works() {
           <img
             alt="Spotify Top Podcasters"
             className="works--row--item--image"
-            src="/images/works/spotify.png"
+            src="./images/works/spotify.png"
           />
         </div>
 
@@ -65,7 +65,7 @@ function Works() {
           <img
             className="works--row--item--logo"
             alt="Coming Soon"
-            src="/images/logo.svg"
+            src="./images/logo.svg"
           />
           <h4
             style={{ marginLeft: "-5px" }}

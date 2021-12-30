@@ -21,7 +21,7 @@ function Contact() {
                 <img
                   alt="linkedin icon"
                   className="contact--left--medias--list--item--link--icon"
-                  src="/images/medias/linkedin.svg"
+                  src="./images/medias/linkedin.svg"
                 />
                 LinkedIn
               </a>
@@ -36,7 +36,7 @@ function Contact() {
                 <img
                   alt="github icon"
                   className="contact--left--medias--list--item--link--icon"
-                  src="/images/medias/github.svg"
+                  src="./images/medias/github.svg"
                 />
                 GitHub
               </a>
@@ -51,7 +51,7 @@ function Contact() {
                 <img
                   alt="dribbble icon"
                   className="contact--left--medias--list--item--link--icon"
-                  src="/images/medias/dribbble.svg"
+                  src="./images/medias/dribbble.svg"
                 />
                 Dribbble
               </a>
@@ -66,7 +66,7 @@ function Contact() {
                 <img
                   alt="instagram icon"
                   className="contact--left--medias--list--item--link--icon"
-                  src="/images/medias/instagram.svg"
+                  src="./images/medias/instagram.svg"
                 />
                 Instagram
               </a>

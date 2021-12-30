@@ -9,7 +9,7 @@ function Skills() {
       <img
         className="skills--circle"
         alt="Skills Circle"
-        src="/images/skills.svg"
+        src="./images/skills.svg"
       />
     </SkillsStyles>
   );

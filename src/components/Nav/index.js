@@ -7,7 +7,7 @@ function Nav() {
       <ul className="navbar--list">
         <img
           className="navbar--list--bars"
-          src="/images/bars-top-s.svg"
+          src="./images/bars-top-s.svg"
           alt="bars-top"
         />
         <li className="navbar--list--item">
@@ -41,7 +41,7 @@ function Nav() {
         </li>
         <img
           className="navbar--list--bars"
-          src="/images/bars-bottom-s.svg"
+          src="./images/bars-bottom-s.svg"
           alt="bars-bottom"
         />
       </ul>

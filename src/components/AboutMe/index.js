@@ -11,7 +11,7 @@ function AboutMe() {
           <img
             className="about-me--profile-picture__mobile--photo"
             alt="José Victor"
-            src="/images/profile-picture.png"
+            src="./images/profile-picture.png"
           />
         </div>
         <h4 className="about-me--texts--title">
@@ -39,7 +39,7 @@ function AboutMe() {
         <img
           className="about-me--profile-picture__desktop--photo"
           alt="José Victor"
-          src="/images/profile-picture.png"
+          src="./images/profile-picture.png"
         />
       </div>
     </AboutMeStyles>
