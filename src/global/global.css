@@ -28,7 +28,7 @@ footer {
 @media (min-width: 800px) {
   section,
   footer {
-    margin: 25px 0;
+    margin: 50px 0;
   }
 }
 a {
