@@ -13,5 +13,8 @@ export const SkillsStyles = styled.section`
       font-size: 60px;
       line-height: 47px;
     }
+    &--circle-s {
+      width: 100%;
+    }
   }
 `;
