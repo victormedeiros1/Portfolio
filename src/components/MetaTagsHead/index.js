@@ -19,7 +19,7 @@ function MetaTagsHead() {
         property="og:description"
         content="Hi, I’m José Victor. Nice to meet you!"
       />
-      <meta property="og:image" content="/images/ogImage.png" />
+      <meta property="og:image" content="./ogImage.png" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="josevictor.dev" />
@@ -29,7 +29,7 @@ function MetaTagsHead() {
         name="twitter:description"
         content="Hi, I’m José Victor. Nice to meet you!"
       />
-      <meta name="twitter:image" content="/images/ogImage.png" />
+      <meta name="twitter:image" content="./ogImage.png" />
 
       <meta name="author" content="José Victor" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
