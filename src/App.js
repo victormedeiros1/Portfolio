@@ -7,10 +7,12 @@ import AboutMe from "./components/AboutMe";
 import Works from "./components/Works";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import MetaTagsHead from "./components/MetaTagsHead";
 
 function App() {
   return (
     <div className="App">
+      <MetaTagsHead />
       <Container>
         <Nav></Nav>
         <Main></Main>
