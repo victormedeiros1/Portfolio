@@ -1,6 +1,7 @@
 {
   "name": "portfolio-v3",
   "version": "0.1.0",
+  "homepage": "https://github.com/victormedeiros1/portfolio-v3/tree/gh-pages",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
