@@ -4,71 +4,81 @@ export const WorksStyles = styled.section`
   .works {
     &--row {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+
+      @media (min-width: 800px) {
+        flex-direction: row;
+      }
 
       &--item {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
+        min-height: 200px;
+        overflow: hidden;
 
-        &--header {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
+        @media (min-width: 800px) {
+          min-height: 325px;
+        }
+
+        &--title {
+          color: var(--white);
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 30px;
           margin-left: 30px;
 
-          &--title {
-            color: var(--white);
-            font-weight: 700;
+          @media (min-width: 800px) {
             font-size: 24px;
             line-height: 36px;
           }
-          &--subtitle {
-            color: var(--white);
+        }
+        &--subtitle {
+          color: var(--white);
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 300;
+          margin-left: 30px;
+
+          @media (min-width: 800px) {
             font-size: 20px;
             line-height: 28px;
-            font-weight: 300;
           }
         }
-        &--omega {
+        &--image {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          height: 80%;
+
+          @media (min-width: 800px) {
+            right: 0;
+          }
+        }
+        &__rose {
           background-color: var(--rose);
-
-          &--image {
-            float: right;
-          }
         }
-        &--netflix {
+        &__blue {
           background-color: var(--blue);
-
-          &--image {
-            float: right;
-          }
         }
-        &--spotify {
+        &__yellow {
           background-color: var(--yellow);
-
-          &--image {
-            float: left;
-          }
         }
-        &--other {
+
+        /* Coming Soon */
+        &__green {
           background-color: var(--green);
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-
-          &--content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-left: -20px;
-
-            p {
-              font-weight: 300;
-              margin-top: 20px;
-            }
-          }
+        }
+        &--logo {
+          width: 100px;
+          margin-bottom: 20px;
         }
         &__size-1 {
           flex: 1;

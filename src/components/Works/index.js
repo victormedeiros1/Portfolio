@@ -7,65 +7,72 @@ function Works() {
   return (
     <WorksStyles id="works" className="works">
       <HeaderSection title="WORKS" />
-      <div className="works--row">
-        <div className="works--row--item--omega works--row--item works--row--item__size-1 mr-50">
-          <div className="works--row--item--header">
-            <h4 className="works--row--item--header--title">
-              Movimento <br />
-              Luz Livre
-            </h4>
-            <h5 className="works--row--item--header--subtitle">
-              Omega <br />
-              2021
-            </h5>
-          </div>
+      {/* Row 1 */}
+      <div className="works--row mb-50">
+        {/* Omega */}
+        <div className="works--row--item works--row--item__size-1 works--row--item__rose mr-50 mb-50-sm">
+          <h4 className="works--row--item--title">
+            Movimento <br />
+            Luz Livre
+          </h4>
+          <h5 className="works--row--item--subtitle">
+            Omega <br /> 2021
+          </h5>
           <img
-            className="works--row--item--omega--image"
             alt="Omega Movimento Luz Livre"
+            className="works--row--item--image"
             src="/images/works/omega.png"
           />
         </div>
-        <div className="works--row--item--netflix works--row--item works--row--item__size-2">
-          <div className="works--row--item--header">
-            <h4 className="works--row--item--header--title">
-              Almanaque <br />
-              Tudum
-            </h4>
-            <h5 className="works--row--item--header--subtitle">
-              Netflix <br />
-              2021
-            </h5>
-          </div>
+
+        {/* Netflix */}
+        <div className="works--row--item works--row--item__size-2 works--row--item__blue mb-50-sm">
+          <h4 className="works--row--item--title">
+            Almanaque <br />
+            Tudum
+          </h4>
+          <h5 className="works--row--item--subtitle">
+            Netflix <br /> 2021
+          </h5>
           <img
-            className="works--row--item--omega--image"
-            alt="Almanque Tudum Netflix"
+            alt="Almanaque Tudum Netflix"
+            className="works--row--item--image"
             src="/images/works/netflix.png"
           />
         </div>
       </div>
-      <div className="works--row mt-50">
-        <div className="works--row--item--spotify works--row--item works--row--item__size-2">
-          <div className="works--row--item--header">
-            <h4 className="works--row--item--header--title">
-              Top <br />
-              Podcasters
-            </h4>
-            <h5 className="works--row--item--header--subtitle">
-              Spotify <br />
-              2021
-            </h5>
-          </div>
+
+      {/* Row 2 */}
+      <div className="works--row">
+        {/* Spotify */}
+        <div className="works--row--item works--row--item__size-2 works--row--item__yellow mb-50-sm">
+          <h4 className="works--row--item--title">
+            Top <br />
+            Podcasters
+          </h4>
+          <h5 className="works--row--item--subtitle">
+            Spotify <br /> 2021
+          </h5>
           <img
-            className="works--row--item--omega--image"
             alt="Spotify Top Podcasters"
+            className="works--row--item--image"
             src="/images/works/spotify.png"
           />
         </div>
-        <div className="works--row--item--other works--row--item works--row--item__size-1 ml-50">
-          <div className="works--row--item--header works--row--item--other--content">
-            <img alt="logo" width="64px" src="/images/logo.svg" />
-            <p className="works--row--item--header--title">COMING SOON</p>
-          </div>
+
+        {/* Coming Soon */}
+        <div className="works--row--item works--row--item__size-1 works--row--item__green ml-50">
+          <img
+            className="works--row--item--logo"
+            alt="Coming Soon"
+            src="/images/logo.svg"
+          />
+          <h4
+            style={{ marginLeft: "-5px" }}
+            className="works--row--item--title"
+          >
+            COMING SOON
+          </h4>
         </div>
       </div>
     </WorksStyles>
