@@ -29,6 +29,7 @@ export const NavStyles = styled.nav`
           }
           &__disabled {
             cursor: default;
+            pointer-events: none;
             opacity: 0.3;
 
             &:hover {

@@ -23,8 +23,7 @@ function Nav() {
         <li className="navbar--list--item">
           <a
             className="navbar--list--item--link navbar--list--item--link__disabled"
-            disabled
-            href="/"
+            href="#"
           >
             DARK
           </a>
