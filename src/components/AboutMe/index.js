@@ -10,7 +10,7 @@ function AboutMe() {
         <div className="about-me--profile-picture__mobile">
           <img
             className="about-me--profile-picture__mobile--photo"
-            alt="Profile Picture Mobile"
+            alt="José Victor"
             src="/images/profile-picture.png"
           />
         </div>
@@ -38,7 +38,7 @@ function AboutMe() {
       <div className="about-me--profile-picture__desktop">
         <img
           className="about-me--profile-picture__desktop--photo"
-          alt="Profile Picture Desktop"
+          alt="José Victor"
           src="/images/profile-picture.png"
         />
       </div>

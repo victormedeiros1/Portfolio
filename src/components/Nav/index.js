@@ -24,7 +24,7 @@ function Nav() {
           <a
             className="navbar--list--item--link navbar--list--item--link__disabled"
             disabled
-            href="#"
+            href="/"
           >
             DARK
           </a>
