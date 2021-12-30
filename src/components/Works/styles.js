@@ -30,6 +30,7 @@ export const WorksStyles = styled.section`
           font-size: 18px;
           line-height: 30px;
           margin-left: 30px;
+          z-index: 1;
 
           @media (min-width: 800px) {
             font-size: 24px;
@@ -42,6 +43,7 @@ export const WorksStyles = styled.section`
           line-height: 24px;
           font-weight: 300;
           margin-left: 30px;
+          z-index: 1;
 
           @media (min-width: 800px) {
             font-size: 20px;
