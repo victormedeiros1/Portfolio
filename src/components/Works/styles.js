@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const WorksStyles = styled.section`
+  margin-top: 0;
+
   .works {
     &--row {
       display: flex;
