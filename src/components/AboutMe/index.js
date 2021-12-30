@@ -7,6 +7,13 @@ function AboutMe() {
     <AboutMeStyles id="about-me" className="about-me">
       <div className="about-me--texts">
         <HeaderSection title="ABOUT ME" />
+        <div className="about-me--profile-picture__mobile">
+          <img
+            className="about-me--profile-picture__mobile--photo"
+            alt="profile picture"
+            src="/images/profile-picture.png"
+          />
+        </div>
         <h4 className="about-me--texts--title">
           Hi, I’m José Victor. Nice to meet you!
         </h4>
@@ -28,9 +35,9 @@ function AboutMe() {
           become one.
         </p>
       </div>
-      <div className="about-me--profile-picture">
+      <div className="about-me--profile-picture__desktop">
         <img
-          className="about-me--profile-picture--photo"
+          className="about-me--profile-picture__desktop--photo"
           alt="profile picture"
           src="/images/profile-picture.png"
         />
