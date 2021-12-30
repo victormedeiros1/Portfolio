@@ -6,7 +6,9 @@ export const AboutMeStyles = styled.section`
 
   .about-me {
     &--texts {
-      flex: 1;
+      @media (min-width: 800px) {
+        flex: 1;
+      }
 
       &--title {
         font-size: 18px;

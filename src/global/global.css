@@ -23,12 +23,12 @@ footer {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  margin: 25px 0;
+  margin-bottom: 50px;
 }
 @media (min-width: 800px) {
   section,
   footer {
-    margin: 50px 0;
+    margin: 25px 0;
   }
 }
 a {
