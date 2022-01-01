@@ -1,7 +1,20 @@
-import React from "react";
 import { NavStyles } from "./styles";
+import { gsap } from "gsap";
+import { useEffect } from "react";
 
 function Nav() {
+  useEffect(() => {
+    gsap.fromTo(
+      ".navbar",
+      {
+        x: 100,
+      },
+      {
+        delay: 1,
+        x: 0,
+      }
+    );
+  });
   return (
     <NavStyles className="navbar">
       <ul className="navbar--list">
