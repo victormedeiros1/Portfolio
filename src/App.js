@@ -1,6 +1,9 @@
+// CSS 
 import "./global/global.css";
 import "./global/theme.css";
 import "./global/utils.css";
+
+// Sections
 import Container from "./components/Container";
 import Main from "./components/Main";
 import Nav from "./components/Nav";
