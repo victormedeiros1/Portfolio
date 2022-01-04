@@ -4,7 +4,7 @@ import MetaTags, { ReactTitle } from "react-meta-tags";
 function MetaTagsHead() {
   return (
     <MetaTags>
-      <meta charset="utf-8" />
+      <meta charSet="utf-8" />
       <link rel="apple-touch-icon" href="./favicon.ico" />
       <link rel="icon" href="./favicon.ico" />
 
