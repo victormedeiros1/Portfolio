@@ -1,5 +1,4 @@
 import { NavStyles } from "./styles";
-import { gsap } from "gsap";
 import { useEffect } from "react";
 
 function Nav() {
@@ -42,21 +41,8 @@ function Nav() {
       else contactNavItem.style.color = "var(--black)";
     });
   }, []);
-
-  useEffect(() => {
-    gsap.fromTo(
-      ".navbar",
-      {
-        x: 100,
-      },
-      {
-        delay: 1,
-        x: 0,
-      }
-    );
-  });
   return (
-    <NavStyles className="navbar">
+    <NavStyles className="navbar animations-move-left">
       <ul className="navbar--list">
         <img
           className="navbar--list--bars"
