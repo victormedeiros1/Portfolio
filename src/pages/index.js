@@ -9,10 +9,12 @@ import Works from "../components/Works";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import MetaTagsHead from "../components/MetaTagsHead";
+import Animations from "../components/Animations";
 
 function Home() {
   return (
     <Container>
+      <Animations />
       <MetaTagsHead />
       <Nav></Nav>
       <Main></Main>
