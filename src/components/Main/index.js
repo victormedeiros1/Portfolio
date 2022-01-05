@@ -7,7 +7,7 @@ function Main() {
   return (
     <MainStyles id="main" className="main">
       <header className="main--header">
-        <div className="main--header--left">
+        <div className="main--header--left animations-move-right">
           <h1 className="main--header--left--h1">
             JOSÉ
             <br /> VICTOR
