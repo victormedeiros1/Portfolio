@@ -27,6 +27,7 @@ export const NavStyles = styled.nav`
           font-size: 12px;
           line-height: 14px;
           font-weight: 700;
+          transition: 0.3s;
 
           &:hover {
             color: var(--green);
