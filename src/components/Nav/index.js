@@ -24,7 +24,7 @@ function Nav() {
 
     document.addEventListener("scroll", () => {
       const scrollDistance = window.scrollY;
-      console.log(`scrollDistance ${scrollDistance}`);
+
       if (scrollDistance >= aboutMeDistance && scrollDistance < worksDistance)
         aboutMeNavItem.style.color = "var(--green)";
       else aboutMeNavItem.style.color = "var(--black)";
