@@ -1,5 +1,4 @@
 import React from "react";
-
 import { MainStyles } from "./styles";
 import BigLogo from "../BigLogo";
 
@@ -24,7 +23,7 @@ function Main() {
             DISCOVER
           </a>
         </div>
-        <div className="main--header--right TL-move-left">
+        <div className="main--header--right">
           <BigLogo></BigLogo>
         </div>
       </header>

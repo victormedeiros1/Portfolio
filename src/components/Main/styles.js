@@ -63,11 +63,11 @@ export const MainStyles = styled.main`
           border: 1px solid var(--dark);
           border-bottom-left-radius: 90px;
           padding: 17px 40px 18px 57px;
-          transition: 0.3s;
 
           &:hover {
             background-color: var(--dark);
             color: var(--white);
+            /* transition: 0.3s; */
           }
         }
       }

@@ -1,5 +1,6 @@
 import { NavStyles } from "./styles";
 import { useEffect } from "react";
+import "../../Animations";
 
 function Nav() {
   useEffect(() => {
@@ -42,7 +43,7 @@ function Nav() {
     });
   }, []);
   return (
-    <NavStyles className="navbar animations-move-left">
+    <NavStyles className="navbar TL-move-left">
       <ul className="navbar--list">
         <img
           className="navbar--list--bars"
