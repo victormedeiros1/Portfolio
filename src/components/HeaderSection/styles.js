@@ -15,7 +15,7 @@ export const HeaderSectionStyles = styled.header`
       line-height: 38px;
       color: var(--green);
       margin-bottom: 10px;
-
+      margin-left: 5px;
       @media (min-width: 800px) {
         font-size: 80px;
         line-height: 62px;
