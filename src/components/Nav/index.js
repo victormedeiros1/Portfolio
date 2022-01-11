@@ -1,6 +1,5 @@
 import { NavStyles } from "./styles";
 import { useEffect } from "react";
-import "../../Animations";
 
 function Nav() {
   useEffect(() => {
