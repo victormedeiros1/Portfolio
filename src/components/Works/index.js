@@ -7,9 +7,7 @@ function Works() {
   return (
     <WorksStyles id="works" className="works">
       <HeaderSection title="WORKS" />
-      {/* Row 1 */}
       <div className="works--row mb-50">
-        {/* Omega */}
         <div className="works--row--item works--row--item__size-1 works--row--item__rose mr-50 mb-50-sm">
           <h4 className="works--row--item--title">
             Movimento <br />
@@ -24,8 +22,6 @@ function Works() {
             src="./images/works/omega.png"
           />
         </div>
-
-        {/* Netflix */}
         <div className="works--row--item works--row--item__size-2 works--row--item__blue mb-50-sm">
           <h4 className="works--row--item--title">
             Almanaque <br />
@@ -41,10 +37,7 @@ function Works() {
           />
         </div>
       </div>
-
-      {/* Row 2 */}
       <div className="works--row">
-        {/* Spotify */}
         <div className="works--row--item works--row--item__size-2 works--row--item__yellow mb-50-sm">
           <h4 className="works--row--item--title">
             Top <br />
@@ -59,8 +52,6 @@ function Works() {
             src="./images/works/spotify.png"
           />
         </div>
-
-        {/* Coming Soon */}
         <div className="works--row--item works--row--item__size-1 works--row--item__green ml-50">
           <img
             className="works--row--item--logo"
