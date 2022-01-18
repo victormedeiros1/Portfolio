@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // Sections
 import Container from "../components/Container";
@@ -9,8 +9,14 @@ import Works from "../components/Works";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import MetaTagsHead from "../components/MetaTagsHead";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Container>
       <MetaTagsHead />
