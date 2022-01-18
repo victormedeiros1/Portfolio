@@ -42,7 +42,7 @@ function Nav() {
     });
   }, []);
   return (
-    <NavStyles className="navbar TL-move-left">
+    <NavStyles className="navbar TL-move-left" data-aos="fade-right">
       <ul className="navbar--list">
         <img
           className="navbar--list--bars"
