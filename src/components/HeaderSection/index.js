@@ -4,7 +4,7 @@ import { HeaderSectionStyles } from "./styles";
 
 function HeaderSection({ title }) {
   return (
-    <HeaderSectionStyles className="header-section">
+    <HeaderSectionStyles className="header-section" data-aos="fade-down">
       <img
         className="header-section--bars"
         src="./images/bars-top-b.svg"
