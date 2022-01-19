@@ -23,7 +23,7 @@ function MetaTagsHead() {
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <meta
         property="og:image"
-        content="https://www.josevictor.dev/ogImage.png"
+        content="https://www.josevictor.dev/images/ogImage.png"
       />
 
       {/* <!-- Twitter --> */}
@@ -36,7 +36,7 @@ function MetaTagsHead() {
       />
       <meta
         property="twitter:image"
-        content="https://www.josevictor.dev/ogImage.png"
+        content="https://www.josevictor.dev/images/ogImage.png"
       />
       <ReactTitle title="José Victor - Front End Dev" />
     </MetaTags>
