@@ -4,8 +4,11 @@ export const SkillsStyles = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 720px;
+
+  @media (min-width: 800px) {
+    height: 100vh;
+    min-height: 720px;
+  }
 
   .skills {
     &--title {
