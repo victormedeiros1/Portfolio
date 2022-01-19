@@ -27,7 +27,16 @@ export const SkillsStyles = styled.section`
     }
     &--circle {
       width: 100%;
-      max-width: 700px;
+
+      @media (min-width: 800px) {
+        width: 50%;
+        max-width: 700px;
+      }
+
+      @media (min-width: 1440px) {
+        width: 100%;
+        max-width: 900px;
+      }
     }
   }
 `;
