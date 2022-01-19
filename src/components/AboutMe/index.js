@@ -51,11 +51,7 @@ function AboutMe() {
           become one.
         </p>
       </div>
-      <div
-        className="about-me--profile-picture__desktop"
-        data-aos="fade-right"
-        data-aos-delay="500"
-      >
+      <div className="about-me--profile-picture__desktop" data-aos="fade-right">
         <img
           className="about-me--profile-picture__desktop--photo"
           alt="José Victor"

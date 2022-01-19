@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const ContactStyles = styled.footer`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 720px;
 
   @media (min-width: 800px) {
     justify-content: center;
