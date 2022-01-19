@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ed23cc5.css",
-    "main.js": "/static/js/main.e927995d.js",
+    "main.css": "/static/css/main.a55ea761.css",
+    "main.js": "/static/js/main.d691e103.js",
     "static/media/background-light.png": "/static/media/background-light.0c96960d102cd2b24ac6.png",
     "static/media/background-dark.png": "/static/media/background-dark.f719fbe7bdf077b515d3.png",
     "static/media/Poppins-Italic.ttf": "/static/media/Poppins-Italic.ce3fff31c0f262aca227.ttf",
@@ -16,11 +16,11 @@
     "static/media/Poppins-Black.ttf": "/static/media/Poppins-Black.eacee5bb9c7fee5939ae.ttf",
     "static/media/ConcertOne-Regular.ttf": "/static/media/ConcertOne-Regular.a116a8575f17a00ddfde.ttf",
     "index.html": "/index.html",
-    "main.6ed23cc5.css.map": "/static/css/main.6ed23cc5.css.map",
-    "main.e927995d.js.map": "/static/js/main.e927995d.js.map"
+    "main.a55ea761.css.map": "/static/css/main.a55ea761.css.map",
+    "main.d691e103.js.map": "/static/js/main.d691e103.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ed23cc5.css",
-    "static/js/main.e927995d.js"
+    "static/css/main.a55ea761.css",
+    "static/js/main.d691e103.js"
   ]
 }
