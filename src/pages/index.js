@@ -16,6 +16,7 @@ function Home() {
   useEffect(() => {
     AOS.init({
       once: true,
+      disable: "mobile",
     });
   }, []);
 
