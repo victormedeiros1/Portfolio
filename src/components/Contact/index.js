@@ -11,7 +11,11 @@ function Contact() {
         <HeaderSection title="CONTACT" />
         <div className="contact--left--medias">
           <ul className="contact--left--medias--list">
-            <li className="contact--left--medias--list--item">
+            <li
+              className="contact--left--medias--list--item"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <a
                 href="https://www.linkedin.com/in/jos%C3%A9-victor-dev/"
                 target="_blank"
@@ -26,7 +30,11 @@ function Contact() {
                 LinkedIn
               </a>
             </li>
-            <li className="contact--left--medias--list--item">
+            <li
+              className="contact--left--medias--list--item"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <a
                 href="https://github.com/victormedeiros1"
                 target="_blank"
@@ -41,7 +49,11 @@ function Contact() {
                 GitHub
               </a>
             </li>
-            <li className="contact--left--medias--list--item">
+            <li
+              className="contact--left--medias--list--item"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
               <a
                 href="https://dribbble.com/victormedeiros1"
                 target="_blank"
@@ -56,7 +68,11 @@ function Contact() {
                 Dribbble
               </a>
             </li>
-            <li className="contact--left--medias--list--item">
+            <li
+              className="contact--left--medias--list--item"
+              data-aos="fade-right"
+              data-aos-delay="900"
+            >
               <a
                 href="https://www.instagram.com/victor_mdrss/"
                 target="_blank"
@@ -74,7 +90,11 @@ function Contact() {
           </ul>
         </div>
       </div>
-      <div className="contact--right">
+      <div
+        className="contact--right"
+        data-aos="fade-right"
+        data-aos-delay="1200"
+      >
         <BigLogo />
       </div>
     </ContactStyles>
