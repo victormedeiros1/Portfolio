@@ -8,7 +8,6 @@ import AboutMe from "../components/AboutMe";
 import Works from "../components/Works";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
-import MetaTagsHead from "../components/MetaTagsHead";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,7 +21,6 @@ function Home() {
 
   return (
     <Container>
-      <MetaTagsHead />
       <Nav></Nav>
       <Main></Main>
       <AboutMe></AboutMe>
