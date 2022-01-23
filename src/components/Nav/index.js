@@ -54,11 +54,42 @@ function Nav() {
   return (
     <NavStyles className="navbar TL-move-left" data-aos="fade-left">
       <ul className="navbar--list">
-        <img
+        {/* <img
           className="navbar--list--bars"
           src="./images/bars-top-s.svg"
           alt="bars-top"
-        />
+        /> */}
+        <svg
+          className="navbar--list--bars"
+          width="30"
+          height="11"
+          viewBox="0 0 30 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="-0.5"
+            x2="10"
+            y2="-0.5"
+            transform="matrix(-1 0 0 1 10 1)"
+            stroke="#2F2F2F"
+          />
+          <line
+            y1="-0.5"
+            x2="20"
+            y2="-0.5"
+            transform="matrix(-1 0 0 1 20 6)"
+            stroke="#2F2F2F"
+          />
+          <line
+            y1="-0.5"
+            x2="30"
+            y2="-0.5"
+            transform="matrix(-1 0 0 1 30 11)"
+            stroke="#2F2F2F"
+          />
+        </svg>
+
         <li className="navbar--list--item">
           <a
             className="navbar--list--item--link navbar--list--item--link--about-me"
@@ -100,11 +131,24 @@ function Nav() {
             CONTACT
           </a>
         </li>
-        <img
+        <svg
+          className="navbar--list--bars"
+          width="30"
+          height="11"
+          viewBox="0 0 30 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line x1="10" y1="10.5" y2="10.5" stroke="#2F2F2F" />
+          <line x1="20" y1="5.5" y2="5.5" stroke="#2F2F2F" />
+          <line x1="30" y1="0.5" y2="0.5" stroke="#2F2F2F" />
+        </svg>
+
+        {/* <img
           className="navbar--list--bars"
           src="./images/bars-bottom-s.svg"
           alt="bars-bottom"
-        />
+        /> */}
       </ul>
     </NavStyles>
   );

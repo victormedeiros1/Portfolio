@@ -18,6 +18,10 @@ export const NavStyles = styled.nav`
 
       &--bars {
         transform: scaleX(-1);
+
+        line {
+          stroke: var(--dark);
+        }
       }
       &--item {
         color: var(--dark);
