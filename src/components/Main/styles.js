@@ -51,6 +51,7 @@ export const MainStyles = styled.main`
           margin-bottom: 50px;
           font-size: 30px;
           line-height: 24px;
+          letter-spacing: 1px;
         }
         &--discover {
           color: var(--dark);
