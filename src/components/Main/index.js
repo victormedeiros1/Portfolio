@@ -28,7 +28,7 @@ function Main() {
           </a>
         </div>
         <div className="main--header--right">
-          <BigLogo></BigLogo>
+          <BigLogo />
         </div>
       </header>
     </MainStyles>
