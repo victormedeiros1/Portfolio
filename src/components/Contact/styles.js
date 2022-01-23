@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const ContactStyles = styled.footer`
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  margin-left: 50px;
 
   @media (min-width: 800px) {
     justify-content: center;
     height: 100vh;
     min-height: 720px;
+    margin-left: 0;
   }
 
   .contact {
@@ -28,6 +29,9 @@ export const ContactStyles = styled.footer`
 
           &--item {
             &--link {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
               color: var(--dark);
               font-family: "Poppins", sans-serif;
               font-weight: 700;
@@ -39,9 +43,13 @@ export const ContactStyles = styled.footer`
 
               &:hover {
                 color: var(--green);
-              }
 
+                .contact--left--medias--list--item--link--icon {
+                  fill: var(--green);
+                }
+              }
               &--icon {
+                fill: var(--dark);
                 width: 15px;
                 height: 15px;
                 margin-right: 10px;
