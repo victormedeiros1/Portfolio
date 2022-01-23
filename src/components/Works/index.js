@@ -65,7 +65,7 @@ function Works() {
           />
         </div>
         <div
-          className="works--row--item works--row--item__size-1 works--row--item__green ml-50"
+          className="works--row--item works--row--item__size-1 works--row--item__purple ml-50"
           data-aos="fade-left"
           data-aos-delay="900"
         >

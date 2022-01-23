@@ -6,6 +6,7 @@
   --rose: #fd4788;
   --blue: #475aff;
   --yellow: #fbd00f;
+  --purple: #5839b0;
   --background-light: url(/public/images/background-light.png);
 
   /* Big Logo */
@@ -17,9 +18,10 @@
   --white: #2f2f2f;
   --green: #27ca54;
   --lightgray: #bbbbbb;
-  --rose: #fd4788;
-  --blue: #475aff;
-  --yellow: #fbd00f;
+  --rose: #2f2f2f;
+  --blue: #2f2f2f;
+  --yellow: #2f2f2f;
+  --purple: #2f2f2f;
   --background-light: url(/public/images/background-dark.png);
 
   /* Big Logo */

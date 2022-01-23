@@ -73,8 +73,8 @@ export const WorksStyles = styled.section`
         }
 
         /* Coming Soon */
-        &__green {
-          background-color: var(--green);
+        &__purple {
+          background-color: var(--purple);
           display: flex;
           flex-direction: column;
           justify-content: center;
