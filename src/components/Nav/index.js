@@ -1,5 +1,5 @@
 import { NavStyles } from "./styles";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Nav() {
   useEffect(() => {
@@ -41,6 +41,16 @@ function Nav() {
       else contactNavItem.style.color = "var(--black)";
     });
   }, []);
+  const [darkTheme, setDarkTheme] = useState(true);
+
+  function changeTheme() {
+    const html = document.querySelector("html");
+    setDarkTheme(!darkTheme);
+    darkTheme
+      ? html.classList.add("dark-mode")
+      : html.classList.remove("dark-mode");
+  }
+
   return (
     <NavStyles className="navbar TL-move-left" data-aos="fade-left">
       <ul className="navbar--list">
@@ -66,12 +76,13 @@ function Nav() {
           </a>
         </li>
         <li className="navbar--list--item">
-          <a
-            className="navbar--list--item--link navbar--list--item--link--dark navbar--list--item--link__disabled"
+          <span
+            onClick={changeTheme}
+            className="navbar--list--item--link navbar--list--item--link--dark"
             href="#"
           >
             DARK
-          </a>
+          </span>
         </li>
         <li className="navbar--list--item">
           <a

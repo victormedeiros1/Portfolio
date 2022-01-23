@@ -20,6 +20,7 @@ export const NavStyles = styled.nav`
         transform: scaleX(-1);
       }
       &--item {
+        color: var(--dark);
         list-style: none;
 
         &--link {
@@ -32,14 +33,9 @@ export const NavStyles = styled.nav`
           &:hover {
             color: var(--green);
           }
-          &__disabled {
-            cursor: default;
-            pointer-events: none;
-            opacity: 0.3;
 
-            &:hover {
-              color: initial;
-            }
+          &--dark {
+            cursor: pointer;
           }
         }
       }
