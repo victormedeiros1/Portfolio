@@ -22,23 +22,28 @@ function Nav() {
     );
 
     document.addEventListener("scroll", () => {
-      const scrollDistance = window.scrollY;
+      if (window.screen.width < 800) {
+        const scrollDistance = window.scrollY;
 
-      if (scrollDistance >= aboutMeDistance && scrollDistance < worksDistance)
-        aboutMeNavItem.style.color = "var(--green)";
-      else aboutMeNavItem.style.color = "var(--black)";
+        if (scrollDistance >= aboutMeDistance && scrollDistance < worksDistance)
+          aboutMeNavItem.style.color = "var(--green)";
+        else aboutMeNavItem.style.color = "var(--black)";
 
-      if (scrollDistance >= worksDistance && scrollDistance < skillsDistance)
-        worksNavItem.style.color = "var(--green)";
-      else worksNavItem.style.color = "var(--black)";
+        if (scrollDistance >= worksDistance && scrollDistance < skillsDistance)
+          worksNavItem.style.color = "var(--green)";
+        else worksNavItem.style.color = "var(--black)";
 
-      if (scrollDistance >= skillsDistance && scrollDistance < contactDistance)
-        skillsNavItem.style.color = "var(--green)";
-      else skillsNavItem.style.color = "var(--black)";
+        if (
+          scrollDistance >= skillsDistance &&
+          scrollDistance < contactDistance
+        )
+          skillsNavItem.style.color = "var(--green)";
+        else skillsNavItem.style.color = "var(--black)";
 
-      if (scrollDistance >= contactDistance)
-        contactNavItem.style.color = "var(--green)";
-      else contactNavItem.style.color = "var(--black)";
+        if (scrollDistance >= contactDistance)
+          contactNavItem.style.color = "var(--green)";
+        else contactNavItem.style.color = "var(--black)";
+      }
     });
   }, []);
   const [darkTheme, setDarkTheme] = useState(true);
@@ -54,11 +59,6 @@ function Nav() {
   return (
     <NavStyles className="navbar TL-move-left" data-aos="fade-left">
       <ul className="navbar--list">
-        {/* <img
-          className="navbar--list--bars"
-          src="./images/bars-top-s.svg"
-          alt="bars-top"
-        /> */}
         <svg
           className="navbar--list--bars"
           width="30"
@@ -143,12 +143,6 @@ function Nav() {
           <line x1="20" y1="5.5" y2="5.5" stroke="#2F2F2F" />
           <line x1="30" y1="0.5" y2="0.5" stroke="#2F2F2F" />
         </svg>
-
-        {/* <img
-          className="navbar--list--bars"
-          src="./images/bars-bottom-s.svg"
-          alt="bars-bottom"
-        /> */}
       </ul>
     </NavStyles>
   );

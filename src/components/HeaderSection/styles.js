@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderSectionStyles = styled.header`
-  width: auto;
   margin: 20px 0;
 
   @media (min-width: 800px) {
@@ -16,6 +15,7 @@ export const HeaderSectionStyles = styled.header`
       color: var(--green);
       margin-bottom: 10px;
       margin-left: 5px;
+      padding-bottom: 10px;
 
       @media (min-width: 800px) {
         font-size: 80px;
