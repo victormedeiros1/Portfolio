@@ -5,6 +5,11 @@ export const BigLogoStyles = styled.div`
   height: 200px;
 
   @media (min-width: 800px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: 1000px) {
     width: 400px;
     height: 400px;
   }
