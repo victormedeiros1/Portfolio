@@ -7,6 +7,10 @@
   --blue: #475aff;
   --yellow: #fbd00f;
   --background-light: url(/public/images/background-light.png);
+
+  /* Big Logo */
+  --big-logo-opacity: 1;
+  --big-logo-shadow: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 .dark-mode:root {
   --dark: #eeece9;
@@ -16,6 +20,9 @@
   --rose: #fd4788;
   --blue: #475aff;
   --yellow: #fbd00f;
-
   --background-light: url(/public/images/background-dark.png);
+
+  /* Big Logo */
+  --big-logo-opacity: 0.3;
+  --big-logo-shadow: drop-shadow(0 0 10px rgba(0, 0, 0));
 }
