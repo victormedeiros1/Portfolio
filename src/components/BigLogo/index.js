@@ -6,7 +6,7 @@ function BigLogo() {
   return (
     <BigLogoStyles>
       <svg
-        class="big-logo-opacity"
+        class="big-logo"
         viewBox="0 0 400 400"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,6 +24,7 @@ function BigLogo() {
           className="logo-animation-2"
         ></path>
       </svg>
+      <div className="shadow"></div>
     </BigLogoStyles>
   );
 }

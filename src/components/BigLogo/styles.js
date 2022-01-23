@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const BigLogoStyles = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
   width: 200px;
   height: 200px;
 
@@ -13,12 +16,35 @@ export const BigLogoStyles = styled.div`
     width: 400px;
     height: 400px;
   }
-  .logo-animation-1 {
-    opacity: 0.8;
-  }
-  .big-logo-opacity {
+  .big-logo {
     filter: var(--big-logo-shadow);
     opacity: var(--big-logo-opacity);
+    animation: floating 1s infinite alternate;
+    transition: 1s;
+
+      @keyframes floating{
+        from {
+          transform: translateY(10px);
+        }
+        to {
+          transform: translateY(-10px);
+        }
+      }
+    }
+  }
+
+  .shadow{
+    width: 300px;
+    height: 0.001px;
+    background: #2f2f2f;
+    border-radius: 50%;
+
+    animation: shadow 1s infinite alternate;
+    transition-delay: 1s;
+    }
+  }
+  .logo-animation-1 {
+    opacity: 0.8;
   }
   /***************************************************
   
