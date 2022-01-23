@@ -18,6 +18,7 @@ export const AboutMeStyles = styled.section`
       }
 
       &--title {
+        color: var(--dark);
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -29,6 +30,7 @@ export const AboutMeStyles = styled.section`
         }
       }
       &--paragraph {
+        color: var(--dark);
         font-size: 12px;
         line-height: 18px;
         font-weight: 400;
