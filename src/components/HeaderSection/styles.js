@@ -15,7 +15,7 @@ export const HeaderSectionStyles = styled.header`
       color: var(--green);
       margin-bottom: 10px;
       margin-left: 5px;
-      padding-bottom: 10px;
+      padding-bottom: 15px;
 
       @media (min-width: 800px) {
         font-size: 80px;

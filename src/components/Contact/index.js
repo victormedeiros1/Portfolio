@@ -24,7 +24,7 @@ function Contact() {
                 rel="noreferrer"
               >
                 <svg
-                  class="contact--left--medias--list--item--link--icon"
+                  className="contact--left--medias--list--item--link--icon"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ function Contact() {
                 rel="noreferrer"
               >
                 <svg
-                  class="contact--left--medias--list--item--link--icon"
+                  className="contact--left--medias--list--item--link--icon"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ function Contact() {
                 rel="noreferrer"
               >
                 <svg
-                  class="contact--left--medias--list--item--link--icon"
+                  className="contact--left--medias--list--item--link--icon"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ function Contact() {
                 rel="noreferrer"
               >
                 <svg
-                  class="contact--left--medias--list--item--link--icon"
+                  className="contact--left--medias--list--item--link--icon"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
