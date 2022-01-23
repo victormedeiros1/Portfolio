@@ -27,7 +27,7 @@ export const WorksStyles = styled.section`
         }
 
         &--title {
-          color: var(--white);
+          color: #eeece9;
           font-weight: 700;
           font-size: 18px;
           line-height: 30px;
@@ -40,7 +40,7 @@ export const WorksStyles = styled.section`
           }
         }
         &--subtitle {
-          color: var(--white);
+          color: #eeece9;
           font-size: 14px;
           line-height: 24px;
           font-weight: 300;
