@@ -1,4 +1,4 @@
-* {
+:root {
   --dark: #2f2f2f;
   --white: #eeece9;
   --green: #27ca54;
@@ -6,7 +6,16 @@
   --rose: #fd4788;
   --blue: #475aff;
   --yellow: #fbd00f;
-
-  --background-dark: url(/public/images/background-dark.png);
   --background-light: url(/public/images/background-light.png);
+}
+.dark-mode:root {
+  --dark: #eeece9;
+  --white: #2f2f2f;
+  --green: #27ca54;
+  --lightgray: #bbbbbb;
+  --rose: #fd4788;
+  --blue: #475aff;
+  --yellow: #fbd00f;
+
+  --background-light: url(/public/images/background-dark.png);
 }
