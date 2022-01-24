@@ -21,6 +21,7 @@ export const HeaderSectionStyles = styled.header`
         font-size: 80px;
         line-height: 62px;
         margin-bottom: unset;
+        padding-bottom: 0;
       }
     }
     &--bars {
