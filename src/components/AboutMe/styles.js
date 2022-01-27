@@ -15,6 +15,7 @@ export const AboutMeStyles = styled.section`
     &--texts {
       @media (min-width: 800px) {
         flex: 1;
+        margin-bottom: 100px;
       }
 
       &--title {
