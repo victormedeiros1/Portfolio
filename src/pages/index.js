@@ -8,6 +8,7 @@ import AboutMe from "../components/AboutMe";
 import Works from "../components/Works";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
+import Languages from "../components/Languages";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,6 +22,7 @@ function Home() {
 
   return (
     <Container>
+      <Languages />
       <Nav></Nav>
       <Main></Main>
       <AboutMe></AboutMe>
