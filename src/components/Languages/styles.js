@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LanguageStyles = styled.div`
   position: fixed;
-  top: 20px;
+  top: 15px;
   left: 20px;
 
   .languages {
