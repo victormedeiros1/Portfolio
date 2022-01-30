@@ -33,6 +33,7 @@ export const MainStyles = styled.main`
         }
 
         &--h1 {
+          width: 200px;
           font-size: 60px;
           line-height: 60px;
           color: var(--dark);
@@ -43,14 +44,16 @@ export const MainStyles = styled.main`
             font-size: 100px;
             line-height: 100px;
             margin: 0 0 20px 0;
+            width: 300px;
           }
         }
         &--h2 {
+          /* width: 250px; */
           color: var(--green);
           font-family: "Concert One", sans-serif;
           margin-bottom: 50px;
           font-size: 30px;
-          line-height: 24px;
+          line-height: 30px;
           letter-spacing: 1px;
         }
         &--discover {

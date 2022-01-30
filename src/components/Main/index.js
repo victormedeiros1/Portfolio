@@ -1,6 +1,7 @@
 import React from "react";
 import { MainStyles } from "./styles";
 import BigLogo from "../BigLogo";
+import i18next from "../../translates/i18next";
 
 function Main() {
   return (
@@ -8,15 +9,14 @@ function Main() {
       <header className="main--header">
         <div className="main--header--left">
           <h1 className="main--header--left--h1" data-aos="fade-right">
-            JOSÉ
-            <br /> VICTOR
+            {i18next.t("main.h1")}
           </h1>
           <h2
             className="main--header--left--h2"
             data-aos="fade-right"
             data-aos-delay="300"
           >
-            FRONT END DEVELOPER
+            {i18next.t("main.h2")}
           </h2>
           <a
             className="main--header--left--discover"
@@ -24,7 +24,7 @@ function Main() {
             data-aos="fade-right"
             data-aos-delay="600"
           >
-            DISCOVER
+            {i18next.t("main.discover")}
           </a>
         </div>
         <div className="main--header--right">

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LanguageStyles = styled.div`
+export const LanguagesMenuStyles = styled.div`
   position: fixed;
   top: 15px;
   left: 20px;

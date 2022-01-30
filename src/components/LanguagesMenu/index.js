@@ -1,10 +1,10 @@
 import React from "react";
 
-import { LanguageStyles } from "./styles";
+import { LanguagesMenuStyles } from "./styles";
 
 function Languages() {
   return (
-    <LanguageStyles className="languages">
+    <LanguagesMenuStyles className="languages">
       <ul className="languages--list">
         <li className="languages--list--item">
           <button className="languages--list--item--button">
@@ -25,7 +25,7 @@ function Languages() {
           </button>
         </li>
       </ul>
-    </LanguageStyles>
+    </LanguagesMenuStyles>
   );
 }
 
