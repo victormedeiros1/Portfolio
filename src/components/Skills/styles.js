@@ -15,13 +15,18 @@ export const SkillsStyles = styled.section`
       position: absolute;
       color: var(--green);
       font-family: "Concert One", sans-serif;
-      font-size: 48px;
-      line-height: 34px;
+      font-size: 40px;
+      line-height: 26px;
       margin-left: 12px;
 
+      @media (min-width: 500px) {
+        font-size: 48px;
+        line-height: 34px;
+      }
+
       @media (min-width: 800px) {
-        font-size: 60px;
-        line-height: 47px;
+        font-size: 54px;
+        line-height: 41px;
         margin-left: 30px;
       }
     }

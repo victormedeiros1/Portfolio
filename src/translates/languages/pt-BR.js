@@ -20,6 +20,9 @@ const messages = {
         title: "TRABALHOS",
         comingSoon: "EM BREVE",
       },
+      skills: {
+        title: "HABILIDADES",
+      },
     },
   },
 };
