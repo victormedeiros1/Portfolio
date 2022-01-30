@@ -28,29 +28,21 @@ function AboutMe() {
           data-aos="fade-down"
           data-aos-delay="200"
         >
-          I started programming in 2017 and graduated as a Computer Technician
-          at the IFRN. I liked to program, it was an interesting challenge, but
-          I took a real rush when I got to the web development part.
+          {i18next.t("aboutMe.firstParagraph")}
         </p>
         <p
           className="about-me--texts--paragraph"
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          When I got to know the front-end and saw the infinite sea of
-          possibilities, I fell in love, I always liked the visual and creative
-          side of things, so I started to interact with the community, working
-          as a team, meeting and exchanging knowledge with new people.
-          essential.
+          {i18next.t("aboutMe.secondParagraph")}
         </p>
         <p
           className="about-me--texts--paragraph"
           data-aos="fade-down"
           data-aos-delay="400"
         >
-          Today, I'm studying Information Systems at UFRN. I want to be a great
-          developer and I am every day studying and striving more and more to
-          become one.
+          {i18next.t("aboutMe.thirdParagraph")}
         </p>
       </div>
       <div className="about-me--profile-picture__desktop" data-aos="fade-right">

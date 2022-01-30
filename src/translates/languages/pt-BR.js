@@ -16,6 +16,10 @@ const messages = {
         thirdParagraph:
           "Hoje, estou fazendo faculdade de Sistemas de Informação na UFRN. Quero ser um grande desenvolvedor e estou todo dia estudando mais e mais para me tornar um.",
       },
+      works: {
+        title: "TRABALHOS",
+        comingSoon: "EM BREVE",
+      },
     },
   },
 };
