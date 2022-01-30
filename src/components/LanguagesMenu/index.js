@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { LanguagesMenuStyles } from "./styles";
 function Languages() {
@@ -20,7 +20,7 @@ function Languages() {
               className="languages--list--item--button--image"
               alt="pt-br"
               src="/images/languages/br.svg"
-              data-language="pt-BR"
+              data-language="ptBR"
             />
           </button>
         </li>
@@ -33,7 +33,7 @@ function Languages() {
               className="languages--list--item--button--image"
               alt="en"
               src="/images/languages/usa.svg"
-              data-language="en-US"
+              data-language="enUS"
             />
           </button>
         </li>
