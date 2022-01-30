@@ -24,7 +24,6 @@ function BigLogo() {
           className="logo-animation-2"
         ></path>
       </svg>
-      <div className="shadow"></div>
     </BigLogoStyles>
   );
 }

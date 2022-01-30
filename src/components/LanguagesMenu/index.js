@@ -13,26 +13,26 @@ function Languages() {
       <ul className="languages--list">
         <li className="languages--list--item">
           <button
-            className="pt-BR languages--list--item--button"
+            className="languages--list--item--button"
             onClick={handleChangeLanguage}
           >
             <img
               className="languages--list--item--button--image"
-              alt="pt-br"
               src="/images/languages/br.svg"
+              alt="ptBR"
               data-language="ptBR"
             />
           </button>
         </li>
         <li className="languages--list--item">
           <button
-            className="en-US languages--list--item--button"
+            className="languages--list--item--button"
             onClick={handleChangeLanguage}
           >
             <img
               className="languages--list--item--button--image"
-              alt="en"
               src="/images/languages/usa.svg"
+              alt="enUS"
               data-language="enUS"
             />
           </button>
