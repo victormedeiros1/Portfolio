@@ -2,11 +2,12 @@ import React from "react";
 
 import { WorksStyles } from "./styles";
 import HeaderSection from "../HeaderSection";
+import i18next from "../../translates/i18next";
 
 function Works() {
   return (
     <WorksStyles id="works" className="works">
-      <HeaderSection title="WORKS" />
+      <HeaderSection title={i18next.t("works.title")} />
       <div className="works--row mb-50">
         <div
           className="works--row--item works--row--item__size-1 works--row--item__rose mr-50 mb-50-sm"
@@ -78,7 +79,7 @@ function Works() {
             style={{ marginLeft: "-5px" }}
             className="works--row--item--title"
           >
-            COMING SOON
+            {i18next.t("works.comingSoon")}
           </h4>
         </div>
       </div>
