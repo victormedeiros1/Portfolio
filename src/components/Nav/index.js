@@ -5,9 +5,9 @@ import i18next from "../../translates/i18next";
 function Nav() {
   useEffect(() => {
     const aboutMeDistance = document.querySelector("#about-me").offsetTop;
-    const worksDistance = document.querySelector("#works").offsetTop + 100;
+    const worksDistance = document.querySelector("#works").offsetTop;
     const skillsDistance = document.querySelector("#skills").offsetTop;
-    const contactDistance = document.querySelector("#contact").offsetTop + 500;
+    const contactDistance = document.querySelector("#contact").offsetTop;
 
     const aboutMeNavItem = document.querySelector(
       ".navbar--list--item--link--about-me"
@@ -23,7 +23,7 @@ function Nav() {
     );
 
     document.addEventListener("scroll", () => {
-      if (window.screen.width < 800) {
+      if (window.screen.width > 800) {
         const scrollDistance = window.scrollY;
 
         if (scrollDistance >= aboutMeDistance && scrollDistance < worksDistance)
