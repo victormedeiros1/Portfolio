@@ -1,5 +1,6 @@
 import { NavStyles } from "./styles";
 import { useEffect, useState } from "react";
+import i18next from "../../translates/i18next";
 
 function Nav() {
   useEffect(() => {
@@ -95,7 +96,7 @@ function Nav() {
             className="navbar--list--item--link navbar--list--item--link--about-me"
             href="#about-me"
           >
-            ABOUT ME
+            {i18next.t("navbar.aboutMe")}
           </a>
         </li>
         <li className="navbar--list--item">
@@ -103,7 +104,7 @@ function Nav() {
             className="navbar--list--item--link navbar--list--item--link--works"
             href="#works"
           >
-            WORKS
+            {i18next.t("navbar.works")}
           </a>
         </li>
         <li className="navbar--list--item">
@@ -120,7 +121,7 @@ function Nav() {
             className="navbar--list--item--link navbar--list--item--link--skills"
             href="#skills"
           >
-            SKILLS
+            {i18next.t("navbar.skills")}
           </a>
         </li>
         <li className="navbar--list--item">
@@ -128,7 +129,7 @@ function Nav() {
             className="navbar--list--item--link navbar--list--item--link--contact"
             href="#contact"
           >
-            CONTACT
+            {i18next.t("navbar.contact")}
           </a>
         </li>
         <svg

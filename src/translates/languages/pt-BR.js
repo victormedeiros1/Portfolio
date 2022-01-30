@@ -1,6 +1,12 @@
 const messages = {
   ptBR: {
     translations: {
+      navbar: {
+        aboutMe: "SOBRE MIM",
+        works: "TRABALHOS",
+        skills: "HABILIDADES",
+        contact: "CONTATO",
+      },
       main: {
         title: "JOSÉ VICTOR",
         subtitle: "DESENVOLVEDOR FRONT-END",
