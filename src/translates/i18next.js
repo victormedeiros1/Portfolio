@@ -6,7 +6,7 @@ const languageDetector = new LanguageDetector();
 i18next.use(languageDetector).init({
   debug: false, // Não ficar mostrando o que ele está na fazendo no console
   defaultNS: ["translations"],
-  fallbackLng: "ptBR", // Linguagem padrão
+  fallbackLng: "enUS", // Linguagem padrão
   ns: ["translations"], //
   resources: messages, // Onde iremos buscar as mensagens
 });
