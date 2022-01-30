@@ -4,6 +4,7 @@ const messages = {
       navbar: {
         aboutMe: "SOBRE MIM",
         works: "TRABALHOS",
+        theme: "TEMA",
         skills: "HABILIDADES",
         contact: "CONTATO",
       },

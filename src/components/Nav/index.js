@@ -113,7 +113,7 @@ function Nav() {
             className="navbar--list--item--link navbar--list--item--link--dark"
             href="#"
           >
-            DARK
+            {i18next.t("navbar.theme")}
           </span>
         </li>
         <li className="navbar--list--item">
