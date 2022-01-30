@@ -9,14 +9,14 @@ function Main() {
       <header className="main--header">
         <div className="main--header--left">
           <h1 className="main--header--left--h1" data-aos="fade-right">
-            {i18next.t("main.h1")}
+            {i18next.t("main.title")}
           </h1>
           <h2
             className="main--header--left--h2"
             data-aos="fade-right"
             data-aos-delay="300"
           >
-            {i18next.t("main.h2")}
+            {i18next.t("main.subtitle")}
           </h2>
           <a
             className="main--header--left--discover"

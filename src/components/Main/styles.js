@@ -48,13 +48,17 @@ export const MainStyles = styled.main`
           }
         }
         &--h2 {
-          /* width: 250px; */
+          width: 300px;
           color: var(--green);
           font-family: "Concert One", sans-serif;
           margin-bottom: 50px;
           font-size: 30px;
           line-height: 30px;
           letter-spacing: 1px;
+
+          @media (min-width: 800px) {
+            width: 400px;
+          }
         }
         &--discover {
           color: var(--dark);
