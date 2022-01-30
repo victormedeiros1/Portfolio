@@ -3,12 +3,13 @@ import React from "react";
 import { ContactStyles } from "./styles";
 import HeaderSection from "../HeaderSection";
 import BigLogo from "../BigLogo";
+import i18next from "../../translates/i18next";
 
 function Contact() {
   return (
     <ContactStyles id="contact" className="contact">
       <div className="contact--left">
-        <HeaderSection title="CONTACT" />
+        <HeaderSection title={i18next.t("contact.title")} />
         <div className="contact--left--medias">
           <ul className="contact--left--medias--list">
             {/* LinkedIn */}

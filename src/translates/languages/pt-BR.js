@@ -23,6 +23,9 @@ const messages = {
       skills: {
         title: "HABILIDADES",
       },
+      contact: {
+        title: "CONTATO",
+      },
     },
   },
 };
