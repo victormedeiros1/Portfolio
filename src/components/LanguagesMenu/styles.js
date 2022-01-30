@@ -8,7 +8,10 @@ export const LanguagesMenuStyles = styled.div`
   .languages {
     &--list {
       list-style: none;
-      display: flex;
+
+      @media (min-width: 800px) {
+        display: flex;
+      }
 
       &--item {
         margin-right: 10px;
