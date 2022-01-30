@@ -2,11 +2,13 @@ import React from "react";
 
 import { AboutMeStyles } from "./styles";
 import HeaderSection from "../HeaderSection";
+import i18next from "../../translates/i18next";
+
 function AboutMe() {
   return (
     <AboutMeStyles id="about-me" className="about-me">
       <div className="about-me--texts">
-        <HeaderSection title="ABOUT ME" />
+        <HeaderSection title={i18next.t("aboutMe.title")} />
         <div className="about-me--profile-picture__mobile">
           <img
             className="about-me--profile-picture__mobile--photo"
@@ -19,7 +21,7 @@ function AboutMe() {
           data-aos="fade-down"
           data-aos-delay="100"
         >
-          Hi, I’m José Victor. Nice to meet you!
+          {i18next.t("aboutMe.subtitle")}
         </h4>
         <p
           className="about-me--texts--paragraph"
