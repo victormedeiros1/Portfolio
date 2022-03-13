@@ -4,7 +4,7 @@ import { LanguagesMenuStyles } from "./styles";
 function Languages() {
   function handleChangeLanguage(event) {
     const language = event.target.getAttribute("data-language");
-    console.log(language);
+
     localStorage.setItem("i18nextLng", language);
     window.location.reload();
   }

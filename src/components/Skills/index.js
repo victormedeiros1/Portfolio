@@ -13,14 +13,14 @@ import i18next from "../../translates/i18next";
 function Skills() {
   const [zoom, setZoom] = useState(false);
   const screenWidth = window.screen.width;
-  console.log(screenWidth);
+
   const universe = document.querySelector("#universe");
   const orbits = document.querySelectorAll(".orbit");
   const background = document.querySelector("#skills");
 
   const universeZoom = () => {
     setZoom(!zoom);
-    // console.log(screenWidth / 1000 / 6);
+
     if (zoom) {
       universe.style.transform = `scale(${screenWidth / 1000 / 6})`;
       background.style.backgroundSize = "100% 100%";
