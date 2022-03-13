@@ -4,7 +4,7 @@ export const ContactStyles = styled.footer`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 40px;
 
   @media (min-width: 800px) {
     justify-content: center;
