@@ -47,7 +47,7 @@ export const Orbit = styled.div`
   width: ${(props) => props.size}px;
   height: ${(props) => props.size}px;
 
-  animation: rotateRight 10s infinite linear;
+  animation: rotateRight ${(props) => props.speed}s infinite linear;
 
   @keyframes rotateRight {
     100% {
