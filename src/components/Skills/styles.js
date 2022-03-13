@@ -7,6 +7,13 @@ export const SkillsStyles = styled.section`
   align-items: center;
   overflow: hidden;
 
+  background-image: url("/images/backgrounds/space2.jpg");
+  background-size: 120% 120%;
+  background-attachment: fixed;
+  background-position: center;
+
+  transition: 3s ease-in;
+
   &__title {
     position: absolute;
     color: var(--green);
@@ -33,6 +40,7 @@ export const Universe = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   transition: 3s ease-in;
 
@@ -48,9 +56,10 @@ export const Orbit = styled.div`
   border-radius: 50%;
   width: ${(props) => props.size}px;
   height: ${(props) => props.size}px;
-  transition: 3s ease-in;
 
   animation: rotateRight ${(props) => props.speed}s infinite linear;
+
+  transition: 3s ease-in;
 
   @keyframes rotateRight {
     100% {
