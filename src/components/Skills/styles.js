@@ -78,11 +78,6 @@ export const Orbit = styled.div`
       transform: rotate(360deg);
     }
   }
-  @keyframes iconsRotation {
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
 `;
 
 export const Skill = styled.img`

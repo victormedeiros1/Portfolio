@@ -12,16 +12,15 @@ function Skills() {
   const [zoom, setZoom] = useState(false);
 
   const universeZoom = () => {
-    console.log("Clicked");
-    console.log(zoom);
     const universe = document.querySelector("#universe");
     const orbits = document.querySelectorAll(".orbit");
     const background = document.querySelector("#skills");
+    const screenWidth = window.screen.width;
 
     setZoom(!zoom);
-
+    // console.log(screenWidth / 1000 / 6);
     if (zoom) {
-      universe.style.transform = "scale(0.3)";
+      universe.style.transform = `scale(${screenWidth / 1000 / 6})`;
       background.style.backgroundSize = "100% 100%";
 
       for (let orbit of orbits) {
@@ -42,26 +41,26 @@ function Skills() {
       <SkillsStyles id="skills" className="skills">
         <Universe id="universe" onClick={universeZoom}>
           <h1 className="skills__title">{i18next.t("skills.title")}</h1>
-          <Orbit className="orbit" size={400} speed={15}>
-            <Skill src="/images/skills/html.svg" speed={15} />
+          <Orbit className="orbit" size={400} speed={11}>
+            <Skill src="/images/skills/html.svg" />
           </Orbit>
           <Orbit className="orbit" size={800} speed={20}>
-            <Skill src="/images/skills/css.svg" speed={20} />
+            <Skill src="/images/skills/css.svg" />
           </Orbit>
           <Orbit className="orbit" size={1200} speed={12}>
-            <Skill src="/images/skills/javascript.svg" speed={12} />
+            <Skill src="/images/skills/javascript.svg" />
           </Orbit>
           <Orbit className="orbit" size={1600} speed={10}>
-            <Skill src="/images/skills/react.svg" speed={10} />
+            <Skill src="/images/skills/react.svg" />
           </Orbit>
           <Orbit className="orbit" size={2000} speed={28}>
-            <Skill src="/images/skills/git.svg" speed={28} />
+            <Skill src="/images/skills/git.svg" />
           </Orbit>
           <Orbit className="orbit" size={2400} speed={22}>
-            <Skill src="/images/skills/figma.svg" speed={22} />
+            <Skill src="/images/skills/figma.svg" />
           </Orbit>
           <Orbit className="orbit" size={2800} speed={30}>
-            <Skill src="/images/skills/bootstrap.svg" speed={30} />
+            <Skill src="/images/skills/bootstrap.svg" />
           </Orbit>
         </Universe>
       </SkillsStyles>
