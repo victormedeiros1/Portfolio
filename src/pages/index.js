@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 // Sections
-import Container from "../components/Container";
 import Main from "../components/Main";
 import Nav from "../components/Nav";
 import AboutMe from "../components/AboutMe";
@@ -21,15 +20,15 @@ function Home() {
   }, []);
 
   return (
-    <Container>
+    <>
       <LanguagesMenu />
-      <Nav></Nav>
-      <Main></Main>
-      <AboutMe></AboutMe>
-      <Works></Works>
-      <Skills></Skills>
-      <Contact></Contact>
-    </Container>
+      <Nav />
+      <Main />
+      <AboutMe />
+      <Works />
+      <Skills />
+      <Contact />
+    </>
   );
 }
 

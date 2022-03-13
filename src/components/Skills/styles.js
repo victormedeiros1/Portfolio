@@ -1,11 +1,21 @@
 import styled from "styled-components";
 
+export const ContainerSkills = styled.div`
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const SkillsStyles = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  max-width: none;
 
   background-image: url("/images/backgrounds/space2.jpg");
   background-size: 120% 120%;

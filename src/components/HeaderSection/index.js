@@ -1,7 +1,6 @@
 import React from "react";
 
 import { HeaderSectionStyles } from "./styles";
-
 function HeaderSection({ title }) {
   return (
     <HeaderSectionStyles className="header-section" data-aos="fade-down">
