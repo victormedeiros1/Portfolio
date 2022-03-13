@@ -34,6 +34,8 @@ export const Universe = styled.div`
   justify-content: center;
   align-items: center;
 
+  transition: 3s ease-in;
+
   @media (min-width: 800px) {
     height: 100vh;
     min-height: 720px;
@@ -46,6 +48,7 @@ export const Orbit = styled.div`
   border-radius: 50%;
   width: ${(props) => props.size}px;
   height: ${(props) => props.size}px;
+  transition: 3s ease-in;
 
   animation: rotateRight ${(props) => props.speed}s infinite linear;
 
