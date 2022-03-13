@@ -43,25 +43,25 @@ function Skills() {
         <Universe id="universe" onClick={universeZoom}>
           <h1 className="skills__title">{i18next.t("skills.title")}</h1>
           <Orbit className="orbit" size={400} speed={15}>
-            <Skill src="/images/skills/html.svg" />
+            <Skill src="/images/skills/html.svg" speed={15} />
           </Orbit>
           <Orbit className="orbit" size={800} speed={20}>
-            <Skill src="/images/skills/css.svg" />
+            <Skill src="/images/skills/css.svg" speed={20} />
           </Orbit>
           <Orbit className="orbit" size={1200} speed={12}>
-            <Skill src="/images/skills/javascript.svg" />
+            <Skill src="/images/skills/javascript.svg" speed={12} />
           </Orbit>
           <Orbit className="orbit" size={1600} speed={10}>
-            <Skill src="/images/skills/react.svg" />
+            <Skill src="/images/skills/react.svg" speed={10} />
           </Orbit>
           <Orbit className="orbit" size={2000} speed={28}>
-            <Skill src="/images/skills/git.svg" />
+            <Skill src="/images/skills/git.svg" speed={28} />
           </Orbit>
           <Orbit className="orbit" size={2400} speed={22}>
-            <Skill src="/images/skills/figma.svg" />
+            <Skill src="/images/skills/figma.svg" speed={22} />
           </Orbit>
           <Orbit className="orbit" size={2800} speed={30}>
-            <Skill src="/images/skills/bootstrap.svg" />
+            <Skill src="/images/skills/bootstrap.svg" speed={30} />
           </Orbit>
         </Universe>
       </SkillsStyles>

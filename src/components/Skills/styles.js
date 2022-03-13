@@ -70,13 +70,17 @@ export const Orbit = styled.div`
   width: ${(props) => props.size}px;
   height: ${(props) => props.size}px;
 
-  animation: rotateRight ${(props) => props.speed}s infinite linear;
-
+  animation: orbitsRotation ${(props) => props.speed}s infinite linear;
   transition: 3s ease-in;
 
-  @keyframes rotateRight {
+  @keyframes orbitsRotation {
     100% {
       transform: rotate(360deg);
+    }
+  }
+  @keyframes iconsRotation {
+    100% {
+      transform: rotate(-360deg);
     }
   }
 `;
@@ -86,4 +90,12 @@ export const Skill = styled.img`
   top: -50px;
   left: calc(50% - 50px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+  /* animation: iconsRotation ${(props) => props.speed}s infinite linear;
+
+  @keyframes iconsRotation {
+    100% {
+      transform: rotate(-360deg);
+    }
+  } */
 `;
