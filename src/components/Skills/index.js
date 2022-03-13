@@ -25,20 +25,20 @@ function Skills() {
       background.style.backgroundSize = "100% 100%";
 
       for (let orbit of orbits) {
-        orbit.style.border = "10px solid red";
+        orbit.style.border = "10px solid rgba(255, 255, 255, 0.1)";
       }
     } else {
       universe.style.transform = "scale(1)";
       background.style.backgroundSize = "120% 120%";
 
       for (let orbit of orbits) {
-        orbit.style.border = "2px solid red";
+        orbit.style.border = "2px solid rgba(255, 255, 255, 0.1)";
       }
     }
   };
 
   return (
-    <ContainerSkills className="JJJJJ">
+    <ContainerSkills>
       <SkillsStyles id="skills" className="skills">
         <Universe id="universe" onClick={universeZoom}>
           <h1 className="skills__title">{i18next.t("skills.title")}</h1>

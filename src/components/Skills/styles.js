@@ -24,23 +24,26 @@ export const SkillsStyles = styled.section`
 
   transition: 3s ease-in;
 
-  &__title {
-    position: absolute;
-    color: var(--green);
-    font-family: "Concert One", sans-serif;
-    font-size: 40px;
-    line-height: 26px;
-    margin-left: 12px;
+  .skills {
+    &__title {
+      position: absolute;
+      color: var(--green);
+      font-family: "Concert One", sans-serif;
+      font-size: 40px;
+      line-height: 26px;
+      margin-left: 12px;
+      text-shadow: 0 0 10px #000;
 
-    @media (min-width: 500px) {
-      font-size: 48px;
-      line-height: 34px;
-    }
+      @media (min-width: 500px) {
+        font-size: 48px;
+        line-height: 34px;
+      }
 
-    @media (min-width: 800px) {
-      font-size: 54px;
-      line-height: 41px;
-      margin-left: 30px;
+      @media (min-width: 800px) {
+        font-size: 54px;
+        line-height: 41px;
+        margin-left: 20px;
+      }
     }
   }
 `;
@@ -62,7 +65,7 @@ export const Universe = styled.div`
 
 export const Orbit = styled.div`
   position: absolute;
-  border: 2px solid red;
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: ${(props) => props.size}px;
   height: ${(props) => props.size}px;
