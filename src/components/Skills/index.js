@@ -8,6 +8,8 @@ import {
   ContainerSkills,
   WaveTop,
   SkillsStylesNoBackground,
+  Meteors,
+  Meteor,
 } from "./styles";
 import i18next from "../../translates/i18next";
 function Skills() {
@@ -43,6 +45,14 @@ function Skills() {
       {screenWidth > 1000 ? (
         <SkillsStyles id="skills" className="skills">
           <Universe id="universe" onClick={universeZoom}>
+            <Meteors>
+              <Meteor className="meteor-1" src="/images/skills/meteor1.png" />
+              <Meteor className="meteor-2" src="/images/skills/meteor2.png" />
+              <Meteor className="meteor-3" src="/images/skills/meteor3.png" />
+              <Meteor className="meteor-4" src="/images/skills/meteor4.png" />
+              <Meteor className="meteor-5" src="/images/skills/meteor5.png" />
+              <Meteor className="meteor-6" src="/images/skills/meteor6.png" />
+            </Meteors>
             <h1 className="skills__title">{i18next.t("skills.title")}</h1>
             <Orbit className="orbit" size={400} speed={11}>
               <Skill src="/images/skills/html.svg" />

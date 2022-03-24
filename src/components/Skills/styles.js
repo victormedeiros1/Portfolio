@@ -117,6 +117,93 @@ export const Universe = styled.div`
   }
 `;
 
+export const Meteors = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .meteor-1 {
+    animation: meteorToRight 30s linear infinite;
+    top: -100%;
+    left: -250%;
+
+    @keyframes meteorToRight {
+      100% {
+        left: 300%;
+        top: 100%;
+      }
+    }
+  }
+  .meteor-2 {
+    top: -150%;
+    left: 0%;
+    animation: meteorToRightBottom 30s linear infinite;
+
+    @keyframes meteorToRightBottom {
+      100% {
+        top: 200%;
+        left: 100%;
+      }
+    }
+  }
+  .meteor-3 {
+    top: 0%;
+    left: -200%;
+    animation: meteorToLeftRight 30s linear infinite;
+
+    @keyframes meteorToLeftRight {
+      100% {
+        top: 0%;
+        left: 300%;
+      }
+    }
+  }
+  .meteor-4 {
+    width: 30%;
+    right: -200%;
+    bottom: 10%;
+
+    animation: meteorToTopBottom 30s linear infinite;
+
+    @keyframes meteorToTopBottom {
+      100% {
+        right: 300%;
+        bottom: -150%;
+      }
+    }
+  }
+  .meteor-5 {
+    bottom: -150%;
+    right: -300%;
+
+    animation: meteorToBottomTop 30s linear infinite;
+
+    @keyframes meteorToBottomTop {
+      100% {
+        right: 500%;
+        bottom: 50%;
+      }
+    }
+  }
+  .meteor-6 {
+    bottom: -150%;
+    left: -200%;
+
+    animation: meteorToLeftTop 30s linear infinite;
+
+    @keyframes meteorToLeftTop {
+      100% {
+        left: 800%;
+        top: -200%;
+      }
+    }
+  }
+`;
+
+export const Meteor = styled.img`
+  position: absolute;
+`;
+
 export const Orbit = styled.div`
   position: absolute;
   border: 2px solid rgba(255, 255, 255, 0.1);
