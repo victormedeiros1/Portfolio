@@ -13,21 +13,21 @@ export const NavStyles = styled.nav`
   }
 
   .navbar {
-    &--list {
+    &__list {
       text-align: end;
 
-      &--bars {
+      &__bars {
         transform: scaleX(-1);
 
         line {
           stroke: var(--dark);
         }
       }
-      &--item {
+      &__item {
         color: var(--dark);
         list-style: none;
 
-        &--link {
+        &__link {
           color: var(--dark);
           font-size: 12px;
           line-height: 14px;
@@ -38,7 +38,7 @@ export const NavStyles = styled.nav`
             color: var(--green);
           }
 
-          &--dark {
+          &__dark {
             cursor: pointer;
           }
         }

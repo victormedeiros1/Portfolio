@@ -10,16 +10,16 @@ function Nav() {
     const contactDistance = document.querySelector("#contact").offsetTop;
 
     const aboutMeNavItem = document.querySelector(
-      ".navbar--list--item--link--about-me"
+      ".navbar__list__item__link__about-me"
     );
     const worksNavItem = document.querySelector(
-      ".navbar--list--item--link--works"
+      ".navbar__list__item__link__works"
     );
     const skillsNavItem = document.querySelector(
-      ".navbar--list--item--link--skills"
+      ".navbar__list__item__link__skills"
     );
     const contactNavItem = document.querySelector(
-      ".navbar--list--item--link--contact"
+      ".navbar__list__item__link__contact"
     );
 
     document.addEventListener("scroll", () => {
@@ -59,9 +59,9 @@ function Nav() {
 
   return (
     <NavStyles className="navbar TL-move-left" data-aos="fade-left">
-      <ul className="navbar--list">
+      <ul className="navbar__list">
         <svg
-          className="navbar--list--bars"
+          className="navbar__list__bars"
           width="30"
           height="11"
           viewBox="0 0 30 11"
@@ -91,49 +91,49 @@ function Nav() {
           />
         </svg>
 
-        <li className="navbar--list--item">
+        <li className="navbar__list__item">
           <a
-            className="navbar--list--item--link navbar--list--item--link--about-me"
+            className="navbar__list__item__link navbar__list__item__link__about-me"
             href="#about-me"
           >
             {i18next.t("navbar.aboutMe")}
           </a>
         </li>
-        <li className="navbar--list--item">
+        <li className="navbar__list__item">
           <a
-            className="navbar--list--item--link navbar--list--item--link--works"
+            className="navbar__list__item__link navbar__list__item__link__works"
             href="#works"
           >
             {i18next.t("navbar.works")}
           </a>
         </li>
-        <li className="navbar--list--item">
+        <li className="navbar__list__item">
           <span
             onClick={changeTheme}
-            className="navbar--list--item--link navbar--list--item--link--dark"
+            className="navbar__list__item__link navbar__list__item__link__dark"
             href="#"
           >
             {i18next.t("navbar.theme")}
           </span>
         </li>
-        <li className="navbar--list--item">
+        <li className="navbar__list__item">
           <a
-            className="navbar--list--item--link navbar--list--item--link--skills"
+            className="navbar__list__item__link navbar__list__item__link__skills"
             href="#skills"
           >
             {i18next.t("navbar.skills")}
           </a>
         </li>
-        <li className="navbar--list--item">
+        <li className="navbar__list__item">
           <a
-            className="navbar--list--item--link navbar--list--item--link--contact"
+            className="navbar__list__item__link navbar__list__item__link__contact"
             href="#contact"
           >
             {i18next.t("navbar.contact")}
           </a>
         </li>
         <svg
-          className="navbar--list--bars"
+          className="navbar__list__bars"
           width="30"
           height="11"
           viewBox="0 0 30 11"
