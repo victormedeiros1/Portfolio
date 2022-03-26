@@ -10,27 +10,27 @@ function Languages() {
   }
   return (
     <LanguagesMenuStyles className="languages">
-      <ul className="languages--list">
-        <li className="languages--list--item">
+      <ul className="languages__list">
+        <li className="languages__list__item">
           <button
-            className="languages--list--item--button"
+            className="languages__list__item__button"
             onClick={handleChangeLanguage}
           >
             <img
-              className="languages--list--item--button--image"
+              className="languages__list__item__button__image"
               src="/images/languages/br.svg"
               alt="ptBR"
               data-language="ptBR"
             />
           </button>
         </li>
-        <li className="languages--list--item">
+        <li className="languages__list__item">
           <button
-            className="languages--list--item--button"
+            className="languages__list__item__button"
             onClick={handleChangeLanguage}
           >
             <img
-              className="languages--list--item--button--image"
+              className="languages__list__item__button__image"
               src="/images/languages/usa.svg"
               alt="enUS"
               data-language="enUS"
