@@ -264,11 +264,11 @@ export const Skill = styled.img`
   left: calc(50% - 50px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 
-  /* animation: iconsRotation ${(props) => props.speed}s infinite linear;
+  animation: iconsRotation ${(props) => props.rotateSpeed}s infinite linear;
 
   @keyframes iconsRotation {
     100% {
       transform: rotate(-360deg);
     }
-  } */
+  }
 `;
