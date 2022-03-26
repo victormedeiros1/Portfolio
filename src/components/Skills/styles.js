@@ -13,10 +13,12 @@ export const SkillsStylesNoBackground = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 75px 0;
 
   @media (min-width: 800px) {
     height: 100vh;
     min-height: 720px;
+    padding: 0;
   }
 
   .skills {

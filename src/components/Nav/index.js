@@ -4,10 +4,11 @@ import i18next from "../../translates/i18next";
 
 function Nav() {
   useEffect(() => {
-    const aboutMeDistance = document.querySelector("#about-me").offsetTop;
-    const worksDistance = document.querySelector("#works").offsetTop;
-    const skillsDistance = document.querySelector("#skills").offsetTop;
-    const contactDistance = document.querySelector("#contact").offsetTop;
+    const mainDistance = document.querySelector("#main").offsetHeight;
+    const aboutMeDistance = document.querySelector("#about-me").offsetHeight;
+    const worksDistance = document.querySelector("#works").offsetHeight;
+    const skillsDistance = document.querySelector("#skills").offsetHeight;
+    const contactDistance = document.querySelector("#contact").offsetHeight;
 
     const aboutMeNavItem = document.querySelector(
       ".navbar__list__item__link__about-me"
@@ -23,28 +24,45 @@ function Nav() {
     );
 
     document.addEventListener("scroll", () => {
-      if (window.screen.width > 800) {
-        const scrollDistance = window.scrollY;
+      // console.log(aboutMeDistance);
+      console.log(mainDistance);
 
-        if (scrollDistance >= aboutMeDistance && scrollDistance < worksDistance)
-          aboutMeNavItem.style.color = "var(--green)";
-        else aboutMeNavItem.style.color = "var(--black)";
+      const scrollDistance = window.scrollY;
 
-        if (scrollDistance >= worksDistance && scrollDistance < skillsDistance)
-          worksNavItem.style.color = "var(--green)";
-        else worksNavItem.style.color = "var(--black)";
+      if (
+        scrollDistance >= mainDistance &&
+        scrollDistance < mainDistance + aboutMeDistance
+      )
+        aboutMeNavItem.style.color = "var(--green)";
+      else aboutMeNavItem.style.color = "var(--black)";
 
-        if (
-          scrollDistance >= skillsDistance &&
-          scrollDistance < contactDistance
-        )
-          skillsNavItem.style.color = "var(--green)";
-        else skillsNavItem.style.color = "var(--black)";
+      if (
+        scrollDistance >= mainDistance + aboutMeDistance &&
+        scrollDistance < mainDistance + aboutMeDistance + worksDistance
+      )
+        worksNavItem.style.color = "var(--green)";
+      else worksNavItem.style.color = "var(--black)";
 
-        if (scrollDistance >= contactDistance)
-          contactNavItem.style.color = "var(--green)";
-        else contactNavItem.style.color = "var(--black)";
-      }
+      if (
+        scrollDistance >= mainDistance + aboutMeDistance + worksDistance &&
+        scrollDistance <
+          mainDistance + aboutMeDistance + worksDistance + skillsDistance
+      )
+        skillsNavItem.style.color = "var(--green)";
+      else skillsNavItem.style.color = "var(--black)";
+
+      if (
+        scrollDistance >=
+          mainDistance + aboutMeDistance + worksDistance + skillsDistance &&
+        scrollDistance <
+          mainDistance +
+            aboutMeDistance +
+            worksDistance +
+            skillsDistance +
+            contactDistance
+      )
+        contactNavItem.style.color = "var(--green)";
+      else contactNavItem.style.color = "var(--black)";
     });
   }, []);
   const [darkTheme, setDarkTheme] = useState(true);
