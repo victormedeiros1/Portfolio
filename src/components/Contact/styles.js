@@ -14,7 +14,7 @@ export const ContactStyles = styled.footer`
   }
 
   .contact {
-    &--left {
+    &__left {
       border-right: none;
 
       @media (min-width: 800px) {
@@ -23,12 +23,12 @@ export const ContactStyles = styled.footer`
         border-right: 1px solid var(--lightgray);
       }
 
-      &--medias {
-        &--list {
+      &__medias {
+        &__list {
           list-style: none;
 
-          &--item {
-            &--link {
+          &__item {
+            &__link {
               display: flex;
               flex-direction: row;
               align-items: center;
@@ -44,11 +44,11 @@ export const ContactStyles = styled.footer`
               &:hover {
                 color: var(--green);
 
-                .contact--left--medias--list--item--link--icon {
+                .contact__left__medias__list__item__link__icon {
                   fill: var(--green);
                 }
               }
-              &--icon {
+              &__icon {
                 fill: var(--dark);
                 width: 15px;
                 height: 15px;
@@ -65,7 +65,7 @@ export const ContactStyles = styled.footer`
         }
       }
     }
-    &--right {
+    &__right {
       @media (max-width: 800px) {
         display: none;
       }

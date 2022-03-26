@@ -10,24 +10,24 @@ function Contact() {
   return (
     <Container>
       <ContactStyles id="contact" className="contact">
-        <div className="contact--left">
+        <div className="contact__left">
           <HeaderSection title={i18next.t("contact.title")} />
-          <div className="contact--left--medias">
-            <ul className="contact--left--medias--list">
+          <div className="contact__left__medias">
+            <ul className="contact__left__medias__list">
               {/* LinkedIn */}
               <li
-                className="contact--left--medias--list--item"
+                className="contact__left__medias__list__item"
                 data-aos="fade-right"
                 data-aos-delay="300"
               >
                 <a
                   href="https://www.linkedin.com/in/jos%C3%A9-victor-dev/"
                   target="_blank"
-                  className="contact--left--medias--list--item--link"
+                  className="contact__left__medias__list__item__link"
                   rel="noreferrer"
                 >
                   <svg
-                    className="contact--left--medias--list--item--link--icon"
+                    className="contact__left__medias__list__item__link__icon"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -38,18 +38,18 @@ function Contact() {
                 </a>
               </li>
               <li
-                className="contact--left--medias--list--item"
+                className="contact__left__medias__list__item"
                 data-aos="fade-right"
                 data-aos-delay="300"
               >
                 <a
-                  className="contact--left--medias--list--item--link"
+                  className="contact__left__medias__list__item__link"
                   href="https://github.com/victormedeiros1"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <svg
-                    className="contact--left--medias--list--item--link--icon"
+                    className="contact__left__medias__list__item__link__icon"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,18 +60,18 @@ function Contact() {
                 </a>
               </li>
               <li
-                className="contact--left--medias--list--item"
+                className="contact__left__medias__list__item"
                 data-aos="fade-right"
                 data-aos-delay="300"
               >
                 <a
-                  className="contact--left--medias--list--item--link"
+                  className="contact__left__medias__list__item__link"
                   href="https://www.instagram.com/victor_mdrss/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <svg
-                    className="contact--left--medias--list--item--link--icon"
+                    className="contact__left__medias__list__item__link__icon"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -83,18 +83,18 @@ function Contact() {
               </li>
               {/* Dribbble */}
               {/* <li
-              className="contact--left--medias--list--item"
+              className="contact__left__medias__list__item"
               data-aos="fade-right"
               data-aos-delay="600"
             >
               <a
                 href="https://dribbble.com/victormedeiros1"
                 target="_blank"
-                className="contact--left--medias--list--item--link"
+                className="contact__left__medias__list__item__link"
                 rel="noreferrer"
               >
                 <svg
-                  className="contact--left--medias--list--item--link--icon"
+                  className="contact__left__medias__list__item__link__icon"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ function Contact() {
           </div>
         </div>
         <div
-          className="contact--right"
+          className="contact__right"
           data-aos="fade-right"
           data-aos-delay="1200"
         >
