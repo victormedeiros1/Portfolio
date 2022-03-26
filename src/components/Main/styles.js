@@ -9,7 +9,7 @@ export const MainStyles = styled.main`
   height: 100vh;
 
   .main {
-    &--header {
+    &__header {
       display: flex;
       flex-direction: column-reverse;
 
@@ -17,7 +17,7 @@ export const MainStyles = styled.main`
         flex-direction: row;
       }
 
-      &--left {
+      &__left {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -32,7 +32,7 @@ export const MainStyles = styled.main`
           margin-right: 100px;
         }
 
-        &--h1 {
+        &__h1 {
           width: 200px;
           font-size: 60px;
           line-height: 60px;
@@ -47,7 +47,7 @@ export const MainStyles = styled.main`
             width: 300px;
           }
         }
-        &--h2 {
+        &__h2 {
           width: 300px;
           color: var(--green);
           font-family: "Concert One", sans-serif;
@@ -60,7 +60,7 @@ export const MainStyles = styled.main`
             width: 400px;
           }
         }
-        &--discover {
+        &__discover {
           color: var(--dark);
           font-family: "Poppins", sans-serif;
           font-weight: 700;
@@ -79,7 +79,7 @@ export const MainStyles = styled.main`
           }
         }
       }
-      &--right {
+      &__right {
         @media (max-width: 800px) {
           display: flex;
           justify-content: center;

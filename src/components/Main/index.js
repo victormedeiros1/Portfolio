@@ -7,20 +7,20 @@ function Main() {
   return (
     <Container>
       <MainStyles id="main" className="main">
-        <header className="main--header">
-          <div className="main--header--left">
-            <h1 className="main--header--left--h1" data-aos="fade-right">
+        <header className="main__header">
+          <div className="main__header__left">
+            <h1 className="main__header__left__h1" data-aos="fade-right">
               {i18next.t("main.title")}
             </h1>
             <h2
-              className="main--header--left--h2"
+              className="main__header__left__h2"
               data-aos="fade-right"
               data-aos-delay="300"
             >
               {i18next.t("main.subtitle")}
             </h2>
             <a
-              className="main--header--left--discover"
+              className="main__header__left__discover"
               href="#about-me"
               data-aos="fade-right"
               data-aos-delay="600"
@@ -28,7 +28,7 @@ function Main() {
               {i18next.t("main.discover")}
             </a>
           </div>
-          <div className="main--header--right">
+          <div className="main__header__right">
             <BigLogo />
           </div>
         </header>
