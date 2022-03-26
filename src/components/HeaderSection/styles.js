@@ -8,7 +8,7 @@ export const HeaderSectionStyles = styled.header`
   }
 
   .header-section {
-    &--title {
+    &__title {
       font-family: "Concert One", sans-serif;
       font-size: 50px;
       line-height: 38px;
@@ -24,7 +24,7 @@ export const HeaderSectionStyles = styled.header`
         padding-bottom: 0;
       }
     }
-    &--bars {
+    &__bars {
       width: 150px;
       height: 20px;
     }
