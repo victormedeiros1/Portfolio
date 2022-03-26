@@ -4,7 +4,7 @@ export const WorksStyles = styled.section`
   margin-top: 0;
 
   .works {
-    &--row {
+    &__row {
       display: flex;
       flex-direction: column;
 
@@ -12,7 +12,7 @@ export const WorksStyles = styled.section`
         flex-direction: row;
       }
 
-      &--item {
+      &__item {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -26,7 +26,7 @@ export const WorksStyles = styled.section`
           min-height: 325px;
         }
 
-        &--title {
+        &__title {
           color: #eeece9;
           font-weight: 700;
           font-size: 18px;
@@ -39,7 +39,7 @@ export const WorksStyles = styled.section`
             line-height: 36px;
           }
         }
-        &--subtitle {
+        &__subtitle {
           color: #eeece9;
           font-size: 14px;
           line-height: 24px;
@@ -52,7 +52,7 @@ export const WorksStyles = styled.section`
             line-height: 28px;
           }
         }
-        &--image {
+        &__image {
           position: absolute;
           right: 0;
           bottom: 0;
@@ -80,7 +80,7 @@ export const WorksStyles = styled.section`
           justify-content: center;
           align-items: center;
         }
-        &--logo {
+        &__logo {
           width: 100px;
           margin-bottom: 20px;
         }
