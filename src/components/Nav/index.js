@@ -4,65 +4,47 @@ import i18next from "../../translates/i18next";
 
 function Nav() {
   useEffect(() => {
-    const mainDistance = document.querySelector("#main").offsetHeight;
-    const aboutMeDistance = document.querySelector("#about-me").offsetHeight;
-    const worksDistance = document.querySelector("#works").offsetHeight;
-    const skillsDistance = document.querySelector("#skills").offsetHeight;
-    const contactDistance = document.querySelector("#contact").offsetHeight;
+    const height = {
+      main: document.querySelector("#main").offsetHeight,
+      aboutMe: document.querySelector("#about-me").offsetHeight,
+      works: document.querySelector("#works").offsetHeight,
+      skills: document.querySelector("#skills").offsetHeight,
+      contact: document.querySelector("#contact").offsetHeight,
+    };
 
-    const aboutMeNavItem = document.querySelector(
-      ".navbar__list__item__link__about-me"
-    );
-    const worksNavItem = document.querySelector(
-      ".navbar__list__item__link__works"
-    );
-    const skillsNavItem = document.querySelector(
-      ".navbar__list__item__link__skills"
-    );
-    const contactNavItem = document.querySelector(
-      ".navbar__list__item__link__contact"
-    );
+    const distance = {
+      main: 0,
+      aboutMe: height.main,
+      works: height.main + height.aboutMe,
+      skills: height.main + height.aboutMe + height.works,
+      contact: height.main + height.aboutMe + height.works + height.skills,
+    };
+
+    const navItem = {
+      aboutMe: document.querySelector(".navbar__list__item__link__about-me"),
+      works: document.querySelector(".navbar__list__item__link__works"),
+      skills: document.querySelector(".navbar__list__item__link__skills"),
+      contact: document.querySelector(".navbar__list__item__link__contact"),
+    };
 
     document.addEventListener("scroll", () => {
-      // console.log(aboutMeDistance);
-      console.log(mainDistance);
+      const scroll = window.scrollY;
 
-      const scrollDistance = window.scrollY;
+      scroll >= distance.aboutMe && scroll < distance.works
+        ? (navItem.aboutMe.style.color = "var(--green)")
+        : (navItem.aboutMe.style.color = "var(--black)");
 
-      if (
-        scrollDistance >= mainDistance &&
-        scrollDistance < mainDistance + aboutMeDistance
-      )
-        aboutMeNavItem.style.color = "var(--green)";
-      else aboutMeNavItem.style.color = "var(--black)";
+      scroll >= distance.works && scroll < distance.skills
+        ? (navItem.works.style.color = "var(--green)")
+        : (navItem.works.style.color = "var(--black)");
 
-      if (
-        scrollDistance >= mainDistance + aboutMeDistance &&
-        scrollDistance < mainDistance + aboutMeDistance + worksDistance
-      )
-        worksNavItem.style.color = "var(--green)";
-      else worksNavItem.style.color = "var(--black)";
+      scroll >= distance.skills && scroll < distance.contact
+        ? (navItem.skills.style.color = "var(--green)")
+        : (navItem.skills.style.color = "var(--black)");
 
-      if (
-        scrollDistance >= mainDistance + aboutMeDistance + worksDistance &&
-        scrollDistance <
-          mainDistance + aboutMeDistance + worksDistance + skillsDistance
-      )
-        skillsNavItem.style.color = "var(--green)";
-      else skillsNavItem.style.color = "var(--black)";
-
-      if (
-        scrollDistance >=
-          mainDistance + aboutMeDistance + worksDistance + skillsDistance &&
-        scrollDistance <
-          mainDistance +
-            aboutMeDistance +
-            worksDistance +
-            skillsDistance +
-            contactDistance
-      )
-        contactNavItem.style.color = "var(--green)";
-      else contactNavItem.style.color = "var(--black)";
+      scroll >= distance.contact
+        ? (navItem.contact.style.color = "var(--green)")
+        : (navItem.contact.style.color = "var(--black)");
     });
   }, []);
   const [darkTheme, setDarkTheme] = useState(true);
