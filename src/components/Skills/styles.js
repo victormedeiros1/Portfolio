@@ -119,13 +119,18 @@ export const Universe = styled.div`
   }
 `;
 
+export const Meteor = styled.img`
+  position: absolute;
+`;
+
 export const Meteors = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
 
   .meteor-1 {
-    animation: meteorToRight 30s linear infinite;
+    animation: meteorToRight 30s 2s linear infinite,
+      meteorRotate 30s linear infinite;
     top: -100%;
     left: -250%;
 
@@ -135,11 +140,17 @@ export const Meteors = styled.div`
         top: 100%;
       }
     }
+    @keyframes meteorRotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
   .meteor-2 {
     top: -150%;
     left: 0%;
-    animation: meteorToRightBottom 30s linear infinite;
+    animation: meteorToRightBottom 30s 3s linear infinite,
+      meteorRotate 30s linear infinite;
 
     @keyframes meteorToRightBottom {
       100% {
@@ -147,16 +158,27 @@ export const Meteors = styled.div`
         left: 100%;
       }
     }
+    @keyframes meteorRotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
   .meteor-3 {
     top: 0%;
     left: -200%;
-    animation: meteorToLeftRight 30s linear infinite;
+    animation: meteorToLeftRight 30s 8s linear infinite,
+      meteorRotate 30s linear infinite;
 
     @keyframes meteorToLeftRight {
       100% {
         top: 0%;
         left: 300%;
+      }
+    }
+    @keyframes meteorRotate {
+      100% {
+        transform: rotate(360deg);
       }
     }
   }
@@ -165,7 +187,8 @@ export const Meteors = styled.div`
     right: -200%;
     bottom: 10%;
 
-    animation: meteorToTopBottom 30s linear infinite;
+    animation: meteorToTopBottom 30s 12s linear infinite,
+      meteorRotate 30s linear infinite;
 
     @keyframes meteorToTopBottom {
       100% {
@@ -173,12 +196,18 @@ export const Meteors = styled.div`
         bottom: -150%;
       }
     }
+    @keyframes meteorRotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
   .meteor-5 {
     bottom: -150%;
     right: -300%;
 
-    animation: meteorToBottomTop 30s linear infinite;
+    animation: meteorToBottomTop 30s 5s linear infinite,
+      meteorRotate 30s linear infinite;
 
     @keyframes meteorToBottomTop {
       100% {
@@ -186,12 +215,17 @@ export const Meteors = styled.div`
         bottom: 50%;
       }
     }
+    @keyframes meteorRotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
   .meteor-6 {
     bottom: -150%;
     left: -200%;
 
-    animation: meteorToLeftTop 30s linear infinite;
+    animation: meteorToLeftTop 30s linear infinite, meteorRotate linear infinite;
 
     @keyframes meteorToLeftTop {
       100% {
@@ -199,11 +233,12 @@ export const Meteors = styled.div`
         top: -200%;
       }
     }
+    @keyframes meteorRotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
-`;
-
-export const Meteor = styled.img`
-  position: absolute;
 `;
 
 export const Orbit = styled.div`
