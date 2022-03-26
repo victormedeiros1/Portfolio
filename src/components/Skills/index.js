@@ -6,7 +6,6 @@ import {
   Skill,
   Universe,
   ContainerSkills,
-  WaveTop,
   SkillsStylesNoBackground,
   Meteors,
   Meteor,
@@ -84,9 +83,9 @@ function Skills() {
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <h3 className="skills--title">{i18next.t("skills.title")}</h3>
+          <h3 className="skills__title">{i18next.t("skills.title")}</h3>
           <img
-            className="skills--circle"
+            className="skills__circle"
             alt="Skills Circle"
             src="./images/skills.svg"
           />
@@ -101,9 +100,9 @@ function Skills() {
     //   data-aos="zoom-in"
     //   data-aos-delay="300"
     // >
-    //   <h3 className="skills--title">{i18next.t("skills.title")}</h3>
+    //   <h3 className="skills__title">{i18next.t("skills.title")}</h3>
     //   <img
-    //     className="skills--circle"
+    //     className="skills__circle"
     //     alt="Skills Circle"
     //     src="./images/skills.svg"
     //   />

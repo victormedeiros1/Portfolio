@@ -20,7 +20,7 @@ export const SkillsStylesNoBackground = styled.section`
   }
 
   .skills {
-    &--title {
+    &__title {
       position: absolute;
       color: var(--green);
       font-family: "Concert One", sans-serif;
@@ -39,7 +39,7 @@ export const SkillsStylesNoBackground = styled.section`
         margin-left: 30px;
       }
     }
-    &--circle {
+    &__circle {
       width: 90%;
 
       @media (min-width: 800px) {
