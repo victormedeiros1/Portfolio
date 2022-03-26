@@ -9,38 +9,38 @@ function AboutMe() {
   return (
     <Container>
       <AboutMeStyles id="about-me" className="about-me">
-        <div className="about-me--texts">
+        <div className="about-me__texts">
           <HeaderSection title={i18next.t("aboutMe.title")} />
-          <div className="about-me--profile-picture__mobile">
+          <div className="about-me__profile-picture__mobile">
             <img
-              className="about-me--profile-picture__mobile--photo"
+              className="about-me__profile-picture__mobile__photo"
               alt="José Victor"
               src="./images/profile-picture.png"
             />
           </div>
           <h4
-            className="about-me--texts--title"
+            className="about-me__texts__title"
             data-aos="fade-down"
             data-aos-delay="100"
           >
             {i18next.t("aboutMe.subtitle")}
           </h4>
           <p
-            className="about-me--texts--paragraph"
+            className="about-me__texts__paragraph"
             data-aos="fade-down"
             data-aos-delay="200"
           >
             {i18next.t("aboutMe.firstParagraph")}
           </p>
           <p
-            className="about-me--texts--paragraph"
+            className="about-me__texts__paragraph"
             data-aos="fade-down"
             data-aos-delay="300"
           >
             {i18next.t("aboutMe.secondParagraph")}
           </p>
           <p
-            className="about-me--texts--paragraph"
+            className="about-me__texts__paragraph"
             data-aos="fade-down"
             data-aos-delay="400"
           >
@@ -48,11 +48,11 @@ function AboutMe() {
           </p>
         </div>
         <div
-          className="about-me--profile-picture__desktop"
+          className="about-me__profile-picture__desktop"
           data-aos="fade-right"
         >
           <img
-            className="about-me--profile-picture__desktop--photo"
+            className="about-me__profile-picture__desktop__photo"
             alt="José Victor"
             src="./images/profile-picture.png"
           />

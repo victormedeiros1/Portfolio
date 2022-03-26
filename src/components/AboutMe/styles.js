@@ -12,13 +12,13 @@ export const AboutMeStyles = styled.section`
   }
 
   .about-me {
-    &--texts {
+    &__texts {
       @media (min-width: 800px) {
         flex: 1;
         margin-bottom: 100px;
       }
 
-      &--title {
+      &__title {
         color: var(--dark);
         font-size: 18px;
         line-height: 24px;
@@ -30,7 +30,7 @@ export const AboutMeStyles = styled.section`
           line-height: 36px;
         }
       }
-      &--paragraph {
+      &__paragraph {
         color: var(--dark);
         font-size: 12px;
         line-height: 18px;
@@ -44,7 +44,7 @@ export const AboutMeStyles = styled.section`
         }
       }
     }
-    &--profile-picture {
+    &__profile-picture {
       text-align: center;
       flex: 1;
 
@@ -52,7 +52,7 @@ export const AboutMeStyles = styled.section`
         text-align: center;
         flex: 1;
 
-        &--photo {
+        &__photo {
           display: none;
 
           @media (min-width: 800px) {
@@ -65,7 +65,7 @@ export const AboutMeStyles = styled.section`
         text-align: center;
         flex: 1;
 
-        &--photo {
+        &__photo {
           display: initial;
           width: 300px;
           height: 400px;
