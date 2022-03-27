@@ -21,8 +21,10 @@ function Nav() {
     };
 
     const navItem = {
+      bars: document.querySelectorAll("line"),
       aboutMe: document.querySelector(".navbar__list__item__link__about-me"),
       works: document.querySelector(".navbar__list__item__link__works"),
+      theme: document.querySelector(".navbar__list__item__link__theme"),
       skills: document.querySelector(".navbar__list__item__link__skills"),
       contact: document.querySelector(".navbar__list__item__link__contact"),
     };
@@ -32,26 +34,46 @@ function Nav() {
 
       scroll >= distance.aboutMe && scroll < distance.works
         ? (navItem.aboutMe.style.color = "var(--green)")
-        : (navItem.aboutMe.style.color = "var(--black)");
+        : (navItem.aboutMe.style.color = "var(--dark)");
 
       scroll >= distance.works && scroll < distance.skills
         ? (navItem.works.style.color = "var(--green)")
-        : (navItem.works.style.color = "var(--black)");
+        : (navItem.works.style.color = "var(--dark)");
 
-      scroll >= distance.skills && scroll < distance.contact
-        ? (navItem.skills.style.color = "var(--green)")
-        : (navItem.skills.style.color = "var(--black)");
+      if (scroll >= distance.skills && scroll < distance.contact) {
+        navItem.bars.forEach((element) => {
+          element.style.stroke = "var(--white)";
+        });
 
-      scroll >= distance.contact
-        ? (navItem.contact.style.color = "var(--green)")
-        : (navItem.contact.style.color = "var(--black)");
+        navItem.aboutMe.style.color = "var(--white)";
+        navItem.works.style.color = "var(--white)";
+        navItem.theme.style.color = "var(--white)";
+        navItem.skills.style.color = "var(--green)";
+        navItem.contact.style.color = "var(--white)";
+      } else {
+        navItem.bars.forEach((element) => {
+          element.style.stroke = "var(--dark)";
+        });
+
+        navItem.aboutMe.style.color = "var(--dark)";
+        navItem.works.style.color = "var(--dark)";
+        navItem.theme.style.color = "var(--dark)";
+        navItem.skills.style.color = "var(--dark)";
+
+        scroll >= distance.contact
+          ? (navItem.contact.style.color = "var(--green)")
+          : (navItem.contact.style.color = "var(--dark)");
+      }
     });
   }, []);
+
   const [darkTheme, setDarkTheme] = useState(true);
 
   function changeTheme() {
     const html = document.querySelector("html");
+
     setDarkTheme(!darkTheme);
+
     darkTheme
       ? html.classList.add("dark-mode")
       : html.classList.remove("dark-mode");
@@ -68,26 +90,13 @@ function Nav() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <line
-            y1="-0.5"
-            x2="10"
-            y2="-0.5"
-            transform="matrix(-1 0 0 1 10 1)"
-            stroke="#2F2F2F"
-          />
-          <line
-            y1="-0.5"
-            x2="20"
-            y2="-0.5"
-            transform="matrix(-1 0 0 1 20 6)"
-            stroke="#2F2F2F"
-          />
+          <line y1="-0.5" x2="10" y2="-0.5" transform="matrix(-1 0 0 1 10 1)" />
+          <line y1="-0.5" x2="20" y2="-0.5" transform="matrix(-1 0 0 1 20 6)" />
           <line
             y1="-0.5"
             x2="30"
             y2="-0.5"
             transform="matrix(-1 0 0 1 30 11)"
-            stroke="#2F2F2F"
           />
         </svg>
 
@@ -110,7 +119,7 @@ function Nav() {
         <li className="navbar__list__item">
           <span
             onClick={changeTheme}
-            className="navbar__list__item__link navbar__list__item__link__dark"
+            className="navbar__list__item__link navbar__list__item__link__theme"
             href="#"
           >
             {i18next.t("navbar.theme")}
@@ -140,9 +149,9 @@ function Nav() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <line x1="10" y1="10.5" y2="10.5" stroke="#2F2F2F" />
-          <line x1="20" y1="5.5" y2="5.5" stroke="#2F2F2F" />
-          <line x1="30" y1="0.5" y2="0.5" stroke="#2F2F2F" />
+          <line x1="10" y1="10.5" y2="10.5" />
+          <line x1="20" y1="5.5" y2="5.5" />
+          <line x1="30" y1="0.5" y2="0.5" />
         </svg>
       </ul>
     </NavStyles>

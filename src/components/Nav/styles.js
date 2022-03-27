@@ -24,21 +24,20 @@ export const NavStyles = styled.nav`
         }
       }
       &__item {
-        color: var(--dark);
         list-style: none;
 
         &__link {
           color: var(--dark);
           font-size: 12px;
           line-height: 14px;
-          font-weight: 700;
+          font-weight: 600;
           transition: 0.3s;
 
           &:hover {
             color: var(--green);
           }
 
-          &__dark {
+          &__theme {
             cursor: pointer;
           }
         }
