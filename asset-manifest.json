@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1a9dbcb3.css",
-    "main.js": "/static/js/main.9f8ca222.js",
+    "main.js": "/static/js/main.d4981636.js",
     "static/media/background-light.png": "/static/media/background-light.3399e25dd1ece1be8936.png",
     "static/media/background-dark.png": "/static/media/background-dark.66d025638cc0508b271a.png",
     "static/media/Poppins-Italic.ttf": "/static/media/Poppins-Italic.ce3fff31c0f262aca227.ttf",
@@ -17,10 +17,10 @@
     "static/media/ConcertOne-Regular.ttf": "/static/media/ConcertOne-Regular.a116a8575f17a00ddfde.ttf",
     "index.html": "/index.html",
     "main.1a9dbcb3.css.map": "/static/css/main.1a9dbcb3.css.map",
-    "main.9f8ca222.js.map": "/static/js/main.9f8ca222.js.map"
+    "main.d4981636.js.map": "/static/js/main.d4981636.js.map"
   },
   "entrypoints": [
     "static/css/main.1a9dbcb3.css",
-    "static/js/main.9f8ca222.js"
+    "static/js/main.d4981636.js"
   ]
 }
