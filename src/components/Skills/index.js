@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   SkillsStyles,
@@ -15,26 +15,26 @@ function Skills() {
   const [zoom, setZoom] = useState(false);
   const screenWidth = window.screen.width;
 
-  const universe = document.querySelector("#universe");
-  const orbits = document.querySelectorAll(".orbit");
-  const background = document.querySelector("#skills");
-
   const universeZoom = () => {
+    const universe = document.querySelector("#universe");
+    const orbits = document.querySelectorAll(".orbit");
+    const background = document.querySelector("#skills");
+
     setZoom(!zoom);
 
     if (zoom) {
-      universe.style.transform = `scale(${screenWidth / 1000 / 6})`;
-      background.style.backgroundSize = "100% 100%";
-
-      for (let orbit of orbits) {
-        orbit.style.border = "10px solid rgba(255, 255, 255, 0.1)";
-      }
-    } else {
       universe.style.transform = "scale(1)";
       background.style.backgroundSize = "120% 120%";
 
       for (let orbit of orbits) {
         orbit.style.border = "2px solid rgba(255, 255, 255, 0.1)";
+      }
+    } else {
+      universe.style.transform = `scale(${screenWidth / 1000 / 6})`;
+      background.style.backgroundSize = "100% 100%";
+
+      for (let orbit of orbits) {
+        orbit.style.border = "10px solid rgba(255, 255, 255, 0.1)";
       }
     }
   };
