@@ -32,13 +32,13 @@ const messages = {
 
         netflix: {
           paragraph1:
-            "O Tudum é um evento internacional que anuncia diversas novidades sobre os projetos da Netflix e no ano de 2021 ocorreu sua 3ª edição para comemorar os 10 anos da Netflix no Brasil. O Almanaque Tudum seria lançado junto ao evento, ele é um livro com material exclusivo, sobre as produções da empresa.",
+            "O Tudum é um evento internacional que anuncia diversas novidades sobre os projetos da Netflix. Em 2021 ocorreu a 3ª edição para comemorar os 10 anos da Netflix no Brasil. O Almanaque Tudum foi lançado junto ao evento, ele é um livro com material exclusivo sobre as produções da empresa.",
           paragraph2:
-            "A Hox.rs ficou responsável por implementar uma “versão virtual” e mais resumida do Almanaque Tudum. Através do Figma tivemos acesso as telas do projeto e começamos o desenvolvimento,  atuei como desenvolvedor front-end criando o código de boa parte das páginas do site. ",
+            "A Hox.rs ficou responsável por implementar uma “versão virtual” e mais curta do Almanaque Tudum. Através do Figma tivemos acesso as telas do projeto e começamos o desenvolvimento. Atuei como desenvolvedor front-end criando o código de boa parte das páginas do site. ",
           paragraph3:
-            "Por ser a minha primeira vez trabalhando numa empresa, simplesmente não acreditei na hora que vi para quem era o projeto. Quando entrava no Figma e via que tinha alguém da Netflix trabalhando ali “do meu lado”, me dava sensação de: “Meu Deus, eu tô pertinhos Dos Caras”.",
+            "Por ser a minha primeira vez trabalhando numa empresa, simplesmente não acreditei na hora que vi para quem era o projeto. Quando entrava no Figma e via que tinha alguém da Netflix trabalhando ali “do meu lado”, a sensação era de: “Meu Deus, eu tô pertinhos Dos Caras”.",
           paragraph4:
-            "Participar de um time de desenvolvedores, trabalhando juntos, aprendendo juntos e criando algo para um nome tão grande, foi maravilhoso.",
+            "Trabalhar junto de um time de desenvolvedores, aprender com eles e criar algo para um nome tão grande, foi maravilhoso.",
           paragraph5:
             "De todos os projetos que fiz até hoje, esse é sem dúvidas o que eu mais tenho carinho, pois foi onde tudo começou e onde eu tive certeza que era nesse mundo que eu queria trabalhar.",
         },
@@ -48,7 +48,7 @@ const messages = {
           paragraph2:
             "Participei de duas etapas nesse projeto, primeiro no desenvolvimento da página onde construí boa parte do corpo do site, acessavamos os dados de um endpoint e faziamos a listagem mostrando suas informações.",
           paragraph3:
-            "A segunda etapa foi mais interessante e desafiadora, eu nunca tinha trabalhado com email marketing e na hora me pareceu algo bem simples, até descobrir as limitações a nível de código, por exemplo, a estrutura do email devia ser feita somente com tabelas, o css todo inline, alguns atributos css e tags html não funcionavam, as imagens teriam que ser colocadas na nuvem para exibição e diversas outras limitações que descobri ao longo do tempo.",
+            "A segunda etapa foi mais interessante e desafiadora, eu nunca tinha trabalhado com email marketing e me pareceu algo bem simples, até descobrir as limitações a nível de código, por exemplo, a estrutura do email devia ser feita somente com tabelas, o css todo inline, alguns atributos css e tags html não funcionavam, as imagens teriam que ser colocadas na nuvem para exibição e diversas outras limitações que descobri ao longo do tempo.",
           paragraph4:
             "Estudando mais a fundo descobri que cada serviço de email, pode interpretar seu código de uma forma diferente, um atributo css podia funcionar no Gmail mas no Outlook não. Então foi necessário fazer diversos testes.",
           paragraph5:
