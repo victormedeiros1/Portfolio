@@ -4,93 +4,72 @@ export const WorksStyles = styled.section`
   margin-top: 0;
 
   .works {
-    &__row {
-      display: flex;
-      flex-direction: column;
+  }
+`;
 
-      @media (min-width: 800px) {
-        flex-direction: row;
-      }
+export const Projects = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
-      &__item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 25px;
-        min-height: 200px;
-        overflow: hidden;
+export const ProjectsList = styled.div`
+  width: 500px;
+  overflow: hidden;
+  padding: 100px 0;
+`;
 
-        @media (min-width: 800px) {
-          min-height: 325px;
-        }
+export const Thumbnail = styled.img`
+  transform: rotate(20deg) translateX(-150px) translateY(50px);
 
-        &__title {
-          color: #eeece9;
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 30px;
-          margin-left: 30px;
-          z-index: 1;
+  &:hover {
+    transform: rotate(20deg) translateX(-200px) translateY(50px);
+  }
+`;
 
-          @media (min-width: 800px) {
-            font-size: 24px;
-            line-height: 36px;
-          }
-        }
-        &__subtitle {
-          color: #eeece9;
-          font-size: 14px;
-          line-height: 24px;
-          font-weight: 300;
-          margin-left: 30px;
-          z-index: 1;
+export const Card = styled.div`
+  position: relative;
+  flex: 1;
+  padding: 32px;
+  margin: 140px 0 0 48px;
+  height: fit-content;
+`;
 
-          @media (min-width: 800px) {
-            font-size: 20px;
-            line-height: 28px;
-          }
-        }
-        &__image {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          height: 80%;
+export const CardTitle = styled.h3`
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 8px;
+`;
 
-          @media (min-width: 800px) {
-            right: 0;
-          }
-        }
-        &__rose {
-          background-color: var(--rose);
-        }
-        &__blue {
-          background-color: var(--blue);
-        }
-        &__yellow {
-          background-color: var(--yellow);
-        }
+export const CardBody = styled.div``;
 
-        /* Coming Soon */
-        &__purple {
-          background-color: var(--purple);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        &__logo {
-          width: 100px;
-          margin-bottom: 20px;
-        }
-        &__size-1 {
-          flex: 1;
-        }
-        &__size-2 {
-          flex: 2;
-        }
-      }
-    }
+export const CardFooter = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+`;
+
+export const CardParagraph = styled.p`
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-bottom: 12px;
+`;
+
+export const Company = styled.p``;
+
+export const Borders = styled.div`
+  img {
+    position: absolute;
+    width: 50%;
+  }
+  .border-top {
+    top: 0;
+    left: 0;
+  }
+  .border-bottom {
+    bottom: 0;
+    right: 0;
   }
 `;

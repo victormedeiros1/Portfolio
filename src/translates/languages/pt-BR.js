@@ -62,6 +62,9 @@ const messages = {
           paragraph3:
             "Como era um projeto relativamente simples, todo o desenvolvimento ficou por minha conta, era uma grande responsabilidade, cometi alguns erros e travei em alguns momentos, mas sempre que precisava de ajuda, haviam desenvolvedores mais experientes disponíveis.",
         },
+        card: {
+          visit: "Visitar",
+        },
       },
 
       skills: {

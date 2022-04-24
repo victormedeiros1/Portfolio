@@ -1,92 +1,157 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { WorksStyles } from "./styles";
-import HeaderSection from "../HeaderSection";
+import {
+  WorksStyles,
+  ProjectsList,
+  Projects,
+  Thumbnail,
+  CardTitle,
+  Card,
+  CardParagraph,
+  CardBody,
+  Borders,
+  CardFooter,
+  Company,
+} from "./styles";
+
 import i18next from "../../translates/i18next";
-import Container from "../Container";
+
+import HeaderSection from "../HeaderSection";
+import Button from "../Button";
 
 function Works() {
+  const [currentProject, setCurrentProject] = useState(0);
+
+  const projects = [
+    {
+      id: 0,
+      thumbnail: "/images/thumbnails/netflix.png",
+      title: "Netflix Tudum",
+      company: "Hox.rs - 2021",
+      link: "https://www.tudumnetflix.com.br/",
+
+      texts: [
+        {
+          id: 0,
+          paragraph: i18next.t("works.netflix.paragraph1"),
+        },
+        {
+          id: 1,
+          paragraph: i18next.t("works.netflix.paragraph2"),
+        },
+        {
+          id: 2,
+          paragraph: i18next.t("works.netflix.paragraph2"),
+        },
+        {
+          id: 3,
+          paragraph: i18next.t("works.netflix.paragraph3"),
+        },
+        {
+          id: 4,
+          paragraph: i18next.t("works.netflix.paragraph4"),
+        },
+      ],
+    },
+    {
+      id: 1,
+      thumbnail: "/images/thumbnails/spotify.png",
+      title: "Spotify Top Podcasters",
+      company: "Hox.rs - 2021",
+      link: "https://spotifytoppodcasters.byspotify.com/",
+
+      texts: [
+        {
+          id: 0,
+          paragraph: i18next.t("works.spotify.paragraph1"),
+        },
+        {
+          id: 1,
+          paragraph: i18next.t("works.spotify.paragraph2"),
+        },
+        {
+          id: 2,
+          paragraph: i18next.t("works.spotify.paragraph2"),
+        },
+        {
+          id: 3,
+          paragraph: i18next.t("works.spotify.paragraph3"),
+        },
+        {
+          id: 4,
+          paragraph: i18next.t("works.spotify.paragraph4"),
+        },
+      ],
+    },
+    {
+      id: 2,
+      thumbnail: "/images/thumbnails/omega.png",
+      title: "Omega",
+      company: "Hox.rs - 2021",
+      link: "https://movimentoluzlivre.com.br/",
+
+      texts: [
+        {
+          id: 0,
+          paragraph: i18next.t("works.omega.paragraph1"),
+        },
+        {
+          id: 1,
+          paragraph: i18next.t("works.omega.paragraph2"),
+        },
+        {
+          id: 2,
+          paragraph: i18next.t("works.omega.paragraph3"),
+        },
+      ],
+    },
+  ];
+
+  const handleCard = (event) => {
+    setCurrentProject(event.target.parentNode.getAttribute("data-project"));
+  };
+
   return (
-    <Container>
-      <WorksStyles id="works" className="works">
-        <HeaderSection title={i18next.t("works.title")} />
-        <div className="works__row mb-50">
-          <div
-            className="works__row__item works__row__item__size-1 works__row__item__rose mr-50 mb-50-sm"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <h4 className="works__row__item__title">
-              Movimento <br />
-              Luz Livre
-            </h4>
-            <h5 className="works__row__item__subtitle">
-              Omega <br /> 2021
-            </h5>
+    <WorksStyles id="works" className="works">
+      <HeaderSection title={i18next.t("works.title")} />
+      <Projects>
+        <ProjectsList>
+          {projects.map(({ id, thumbnail }) => (
+            <div data-project={id} onClick={handleCard} key={id}>
+              <Thumbnail src={thumbnail} />
+            </div>
+          ))}
+        </ProjectsList>
+        <Card>
+          <Borders>
             <img
-              alt="Omega Movimento Luz Livre"
-              className="works__row__item__image"
-              src="./images/works/omega.png"
+              alt="border"
+              className="border-top"
+              src="/images/border-top.svg"
             />
-          </div>
-          <div
-            className="works__row__item works__row__item__size-2 works__row__item__blue mb-50-sm"
-            data-aos="fade-down"
-            data-aos-delay="600"
-          >
-            <h4 className="works__row__item__title">
-              Almanaque <br />
-              Tudum
-            </h4>
-            <h5 className="works__row__item__subtitle">
-              Netflix <br /> 2021
-            </h5>
             <img
-              alt="Almanaque Tudum Netflix"
-              className="works__row__item__image"
-              src="./images/works/netflix.png"
+              alt="border"
+              className="border-bottom"
+              src="/images/border-bottom.svg"
             />
-          </div>
-        </div>
-        <div className="works__row">
-          <div
-            className="works__row__item works__row__item__size-2 works__row__item__yellow mb-50-sm"
-            data-aos="fade-up"
-            data-aos-delay="1200"
-          >
-            <h4 className="works__row__item__title">
-              Top <br />
-              Podcasters
-            </h4>
-            <h5 className="works__row__item__subtitle">
-              Spotify <br /> 2021
-            </h5>
-            <img
-              alt="Spotify Top Podcasters"
-              className="works__row__item__image"
-              src="./images/works/spotify.png"
-            />
-          </div>
-          <div
-            className="works__row__item works__row__item__size-1 works__row__item__purple ml-50"
-            data-aos="fade-left"
-            data-aos-delay="900"
-          >
-            <img
-              className="works__row__item__logo"
-              alt="Coming Soon"
-              src="./images/logo.svg"
-            />
-            <h4
-              style={{ marginLeft: "-5px" }}
-              className="works__row__item__title"
-            >
-              {i18next.t("works.comingSoon")}
-            </h4>
-          </div>
-        </div>
-      </WorksStyles>
-    </Container>
+          </Borders>
+          <CardTitle>{projects[currentProject].title.toUpperCase()}</CardTitle>
+          <CardBody>
+            {projects[currentProject].texts.map((text) => (
+              <CardParagraph key={text.id}>{text.paragraph}</CardParagraph>
+            ))}
+            <CardFooter>
+              <Button
+                text={i18next.t("works.card.visit")}
+                link={projects[currentProject].link}
+                target="_blank"
+              />
+              <Company>{projects[currentProject].company}</Company>
+            </CardFooter>
+          </CardBody>
+        </Card>
+      </Projects>
+    </WorksStyles>
   );
 }
 

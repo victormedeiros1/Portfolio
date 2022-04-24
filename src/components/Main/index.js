@@ -3,6 +3,8 @@ import { MainStyles } from "./styles";
 import BigLogo from "../BigLogo";
 import i18next from "../../translates/i18next";
 import Container from "../Container";
+import Button from "../Button";
+
 function Main() {
   return (
     <Container>
@@ -19,14 +21,7 @@ function Main() {
             >
               {i18next.t("main.subtitle")}
             </h2>
-            <a
-              className="main__header__left__discover"
-              href="#about-me"
-              data-aos="fade-right"
-              data-aos-delay="600"
-            >
-              {i18next.t("main.discover")}
-            </a>
+            <Button text={i18next.t("main.discover")} link="#about-me" />
           </div>
           <div className="main__header__right">
             <BigLogo />

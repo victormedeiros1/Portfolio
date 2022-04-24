@@ -60,6 +60,9 @@ const messages = {
           paragraph3:
             "As it was a relatively simple project, all the development was on my own, it was a big responsibility, I made some mistakes and crashed at times, but whenever I needed help, there were more experienced developers available.",
         },
+        card: {
+          visit: "Visit",
+        },
       },
       skills: {
         title: "SKILLS",
