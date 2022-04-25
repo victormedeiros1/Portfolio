@@ -3,7 +3,7 @@ import { MainStyles } from "./styles";
 import BigLogo from "../BigLogo";
 import i18next from "../../translates/i18next";
 import Container from "../Container";
-import Button from "../Button";
+import ButtonModern from "../Buttons/ButtonModern";
 
 function Main() {
   return (
@@ -21,7 +21,7 @@ function Main() {
             >
               {i18next.t("main.subtitle")}
             </h2>
-            <Button text={i18next.t("main.discover")} link="#about-me" />
+            <ButtonModern text={i18next.t("main.discover")} link="#about-me" />
           </div>
           <div className="main__header__right">
             <BigLogo />

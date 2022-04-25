@@ -46,7 +46,7 @@ const messages = {
           paragraph2:
             "I participated in two stages in this project, first in the development of the page where I built much of the body of the site, we accessed the data from an endpoint and made the listing showing its information.",
           paragraph3:
-            "The second stage was more interesting and challenging, I had never worked with email marketing and it seemed to me to be something very simple, until I discovered the limitations at the code level, for example, the structure of the email had to be made only with tables, the css all inline , some css attributes and html tags didn't work, the images would have to be placed in the cloud for display and several other limitations that I discovered over time..",
+            "The second stage was more interesting and challenging, I had never worked with email marketing and it seemed to me to be something very simple, until I discovered the limitations at the code level, for example, the structure of the email had to be made only with tables, the css all inline , some css attributes and html tags didn't work, the images would have to be placed in the cloud for display and several other limitations that I discovered over time.",
           paragraph4:
             "Studying further I found that each email service can interpret its code in a different way, a css attribute could work in Gmail but not in Outlook. So it was necessary to do several tests.",
           paragraph5:

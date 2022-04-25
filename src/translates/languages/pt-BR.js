@@ -17,7 +17,7 @@ const messages = {
 
       aboutMe: {
         title: "SOBRE MIM",
-        subtitle: "Eaí, tudo bom? Me chamo José Victor. Prazer em conhecê-lo!",
+        subtitle: "Me chamo José Victor. Prazer em conhecê-lo!",
         firstParagraph:
           "Eu comecei a programar em 2017 e me formei como Técnico em Informática pelo IFRN. Eu gostava de programar, era um desafio interessante, mas comecei a ter apresso de verdade quando cheguei na parte de desenvolvimento web.",
         secondParagraph:

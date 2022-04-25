@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonStyles } from "./styles";
 
-function Button({ link, text, target, children }) {
+function ButtonModern({ link, text, target, children }) {
   return (
     <ButtonStyles href={link} target={target}>
       {children}
@@ -10,4 +10,4 @@ function Button({ link, text, target, children }) {
   );
 }
 
-export default Button;
+export default ButtonModern;

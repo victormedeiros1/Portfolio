@@ -4,67 +4,63 @@ import i18next from "../../translates/i18next";
 
 function Nav() {
   useEffect(() => {
-    const height = {
-      main: document.querySelector("#main").offsetHeight,
-      aboutMe: document.querySelector("#about-me").offsetHeight,
-      works: document.querySelector("#works").offsetHeight,
-      skills: document.querySelector("#skills").offsetHeight,
-      contact: document.querySelector("#contact").offsetHeight,
-    };
+    const sections = document.querySelectorAll("main, section, footer");
 
-    const distance = {
-      main: 0,
-      aboutMe: height.main,
-      works: height.main + height.aboutMe,
-      skills: height.main + height.aboutMe + height.works,
-      contact: height.main + height.aboutMe + height.works + height.skills,
-    };
-
-    const navItem = {
-      bars: document.querySelectorAll("line"),
-      aboutMe: document.querySelector(".navbar__list__item__link__about-me"),
-      works: document.querySelector(".navbar__list__item__link__works"),
-      theme: document.querySelector(".navbar__list__item__link__theme"),
-      skills: document.querySelector(".navbar__list__item__link__skills"),
-      contact: document.querySelector(".navbar__list__item__link__contact"),
-    };
+    sections.forEach((section) => {
+      const sectionsHeight = section.clientHeight;
+    });
 
     document.addEventListener("scroll", () => {
       const scroll = window.scrollY;
 
-      scroll >= distance.aboutMe && scroll < distance.works
-        ? (navItem.aboutMe.style.color = "var(--green)")
-        : (navItem.aboutMe.style.color = "var(--dark)");
-
-      scroll >= distance.works && scroll < distance.skills
-        ? (navItem.works.style.color = "var(--green)")
-        : (navItem.works.style.color = "var(--dark)");
-
-      if (scroll >= distance.skills && scroll < distance.contact) {
-        navItem.bars.forEach((element) => {
-          element.style.stroke = "var(--white)";
-        });
-
-        navItem.aboutMe.style.color = "var(--white)";
-        navItem.works.style.color = "var(--white)";
-        navItem.theme.style.color = "var(--white)";
-        navItem.skills.style.color = "var(--green)";
-        navItem.contact.style.color = "var(--white)";
-      } else {
-        navItem.bars.forEach((element) => {
-          element.style.stroke = "var(--dark)";
-        });
-
-        navItem.aboutMe.style.color = "var(--dark)";
-        navItem.works.style.color = "var(--dark)";
-        navItem.theme.style.color = "var(--dark)";
-        navItem.skills.style.color = "var(--dark)";
-
-        scroll >= distance.contact
-          ? (navItem.contact.style.color = "var(--green)")
-          : (navItem.contact.style.color = "var(--dark)");
-      }
+      sections.forEach((section) => {
+        const sectionsHeight = section.clientHeight;
+      });
     });
+    // const height = {
+    //   main: document.querySelector("#main").offsetHeight,
+    //   aboutMe: document.querySelector("#about-me").offsetHeight,
+    //   works: document.querySelector("#works").offsetHeight,
+    //   skills: document.querySelector("#skills").offsetHeight,
+    //   contact: document.querySelector("#contact").offsetHeight,
+    // };
+
+    // const distance = {
+    //   main: 0,
+    //   aboutMe: height.main,
+    //   works: height.main + height.aboutMe,
+    //   skills: height.main + height.aboutMe + height.works,
+    //   contact: height.main + height.aboutMe + height.works + height.skills,
+    // };
+
+    // const navItem = {
+    //   bars: document.querySelectorAll("line"),
+    //   aboutMe: document.querySelector(".navbar__list__item__link__about-me"),
+    //   works: document.querySelector(".navbar__list__item__link__works"),
+    //   theme: document.querySelector(".navbar__list__item__link__theme"),
+    //   skills: document.querySelector(".navbar__list__item__link__skills"),
+    //   contact: document.querySelector(".navbar__list__item__link__contact"),
+    // };
+
+    // document.addEventListener("scroll", () => {
+    //   const scroll = window.scrollY;
+
+    //   scroll >= distance.aboutMe && scroll < distance.works
+    //     ? (navItem.aboutMe.style.color = "var(--green)")
+    //     : (navItem.aboutMe.style.color = "var(--dark)");
+
+    //   scroll >= distance.works && scroll < distance.skills
+    //     ? (navItem.works.style.color = "var(--green)")
+    //     : (navItem.works.style.color = "var(--dark)");
+
+    //   scroll >= distance.skills && scroll < distance.contact
+    //     ? (navItem.skills.style.color = "var(--green)")
+    //     : (navItem.skills.style.color = "var(--dark)");
+
+    //   scroll >= distance.contact
+    //     ? (navItem.contact.style.color = "var(--green)")
+    //     : (navItem.contact.style.color = "var(--dark)");
+    // });
   }, []);
 
   const [darkTheme, setDarkTheme] = useState(true);

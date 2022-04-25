@@ -17,7 +17,8 @@ import {
 import i18next from "../../translates/i18next";
 
 import HeaderSection from "../HeaderSection";
-import Button from "../Button";
+import ButtonModernSmall from "../Buttons/ButtonModernSmall";
+import Container from "../Container";
 
 function Works() {
   const [currentProject, setCurrentProject] = useState(0);
@@ -41,15 +42,15 @@ function Works() {
         },
         {
           id: 2,
-          paragraph: i18next.t("works.netflix.paragraph2"),
-        },
-        {
-          id: 3,
           paragraph: i18next.t("works.netflix.paragraph3"),
         },
         {
-          id: 4,
+          id: 3,
           paragraph: i18next.t("works.netflix.paragraph4"),
+        },
+        {
+          id: 4,
+          paragraph: i18next.t("works.netflix.paragraph5"),
         },
       ],
     },
@@ -71,15 +72,15 @@ function Works() {
         },
         {
           id: 2,
-          paragraph: i18next.t("works.spotify.paragraph2"),
-        },
-        {
-          id: 3,
           paragraph: i18next.t("works.spotify.paragraph3"),
         },
         {
-          id: 4,
+          id: 3,
           paragraph: i18next.t("works.spotify.paragraph4"),
+        },
+        {
+          id: 4,
+          paragraph: i18next.t("works.spotify.paragraph5"),
         },
       ],
     },
@@ -113,12 +114,12 @@ function Works() {
 
   return (
     <WorksStyles id="works" className="works">
-      <HeaderSection title={i18next.t("works.title")} />
+      <HeaderSection className="works-title" title={i18next.t("works.title")} />
       <Projects>
-        <ProjectsList>
+        <ProjectsList id="projects-list">
           {projects.map(({ id, thumbnail }) => (
             <div data-project={id} onClick={handleCard} key={id}>
-              <Thumbnail src={thumbnail} />
+              <Thumbnail className="thumbnail" src={thumbnail} />
             </div>
           ))}
         </ProjectsList>
@@ -141,7 +142,7 @@ function Works() {
               <CardParagraph key={text.id}>{text.paragraph}</CardParagraph>
             ))}
             <CardFooter>
-              <Button
+              <ButtonModernSmall
                 text={i18next.t("works.card.visit")}
                 link={projects[currentProject].link}
                 target="_blank"

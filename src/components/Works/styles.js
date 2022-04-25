@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 export const WorksStyles = styled.section`
   margin-top: 0;
-
-  .works {
-  }
 `;
 
 export const Projects = styled.div`
@@ -13,51 +10,59 @@ export const Projects = styled.div`
 `;
 
 export const ProjectsList = styled.div`
-  width: 500px;
+  width: 25%;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 20px 0;
+
+  @media (min-width: 600px) {
+    width: 40%;
+    padding: 55px 0;
+  }
+  @media (min-width: 800px) {
+    padding: 120px 0;
+  }
 `;
 
 export const Thumbnail = styled.img`
-  transform: rotate(20deg) translateX(-150px) translateY(50px);
+  margin-top: -5px;
+  width: 200%;
+  transform: rotate(20deg) translateX(-15%) translateY(50px);
 
-  &:hover {
-    transform: rotate(20deg) translateX(-200px) translateY(50px);
+  @media (min-width: 800px) {
+    transform: rotate(20deg) translateX(-150px) translateY(50px);
+    width: initial;
   }
 `;
 
 export const Card = styled.div`
+  width: 65%;
   position: relative;
-  flex: 1;
-  padding: 32px;
-  margin: 140px 0 0 48px;
+  margin: 64px 0 0 8px;
+  padding: 16px;
   height: fit-content;
+
+  @media (min-width: 600px) {
+    width: 60%;
+    margin: 100px 0 0 48px;
+    padding: 32px;
+  }
+
+  @media (min-width: 800px) {
+    width: 60%;
+    margin: 185px 0 0 48px;
+    padding: 32px;
+  }
 `;
 
 export const CardTitle = styled.h3`
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 900;
   margin-bottom: 8px;
+
+  @media (min-width: 800px) {
+    font-size: 36px;
+  }
 `;
-
-export const CardBody = styled.div``;
-
-export const CardFooter = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 50px;
-`;
-
-export const CardParagraph = styled.p`
-  font-size: 14px;
-  line-height: 18px;
-
-  margin-bottom: 12px;
-`;
-
-export const Company = styled.p``;
 
 export const Borders = styled.div`
   img {
@@ -72,4 +77,33 @@ export const Borders = styled.div`
     bottom: 0;
     right: 0;
   }
+`;
+
+export const CardBody = styled.div``;
+
+export const CardParagraph = styled.p`
+  font-size: 12px;
+  margin-bottom: 8px;
+
+  @media (min-width: 800px) {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 18px;
+  }
+`;
+
+export const CardFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
+`;
+
+export const Company = styled.p`
+  font-size: 14px;
+  line-height: 18px;
 `;
