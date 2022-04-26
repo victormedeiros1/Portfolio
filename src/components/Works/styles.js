@@ -25,12 +25,18 @@ export const ProjectsList = styled.div`
 
 export const Thumbnail = styled.img`
   margin-top: -5px;
+  transition: 0.2s;
   width: 200%;
   transform: rotate(20deg) translateX(-15%) translateY(50px);
 
   @media (min-width: 800px) {
     transform: rotate(20deg) translateX(-150px) translateY(50px);
     width: initial;
+  }
+
+  &:hover {
+    transform: rotate(20deg) translateX(-170px) translateY(50px);
+    cursor: pointer;
   }
 `;
 
@@ -40,6 +46,7 @@ export const Card = styled.div`
   margin: 64px 0 0 8px;
   padding: 16px;
   height: fit-content;
+  transition: 1s;
 
   @media (min-width: 600px) {
     width: 60%;
