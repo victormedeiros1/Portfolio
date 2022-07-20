@@ -1,7 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const WorksStyles = styled.section`
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
 `;
 
 export const Projects = styled.div`
@@ -10,12 +13,11 @@ export const Projects = styled.div`
 `;
 
 export const ProjectsList = styled.div`
-  width: 25%;
+  width: 40%;
   overflow: hidden;
   padding: 20px 0;
 
   @media (min-width: 600px) {
-    width: 40%;
     padding: 55px 0;
   }
   @media (min-width: 800px) {
@@ -37,6 +39,11 @@ export const Thumbnail = styled.img`
   &:hover {
     transform: rotate(20deg) translateX(-170px) translateY(50px);
     cursor: pointer;
+
+    @media (max-width: 800px) {
+      transform: rotate(20deg) translateX(-70px) translateY(50px);
+      cursor: pointer;
+    }
   }
 `;
 
