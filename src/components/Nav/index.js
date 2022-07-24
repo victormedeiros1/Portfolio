@@ -1,78 +1,72 @@
-import { NavStyles } from "./styles";
-import { useEffect, useState } from "react";
-import i18next from "../../translates/i18next";
+import { NavStyles } from './styles';
+import { useEffect, useState } from 'react';
+import i18next from '../../translates/i18next';
 
 function Nav() {
   useEffect(() => {
-    const sections = document.querySelectorAll("main, section, footer");
+    const sections = document.querySelectorAll('main, section, footer');
 
-    sections.forEach((section) => {
-      const sectionsHeight = section.clientHeight;
-    });
+    const sectionsHeight = {
+      main: sections[0].offsetHeight,
+      aboutMe: sections[1].offsetHeight,
+      works: sections[2].offsetHeight,
+      skills: sections[3].offsetHeight,
+      contact: sections[4].offsetHeight,
+    };
 
-    document.addEventListener("scroll", () => {
+    const sectionsDistance = {
+      main: 0,
+      aboutMe: sectionsHeight.main,
+      works: sectionsHeight.main + sectionsHeight.aboutMe,
+      skills:
+        sectionsHeight.main + sectionsHeight.aboutMe + sectionsHeight.works,
+      contact:
+        sectionsHeight.main +
+        sectionsHeight.aboutMe +
+        sectionsHeight.works +
+        sectionsHeight.skills,
+    };
+
+    const navItem = {
+      bars: document.querySelectorAll('line'),
+      aboutMe: document.querySelector('.navbar__list__item__link__about-me'),
+      works: document.querySelector('.navbar__list__item__link__works'),
+      theme: document.querySelector('.navbar__list__item__link__theme'),
+      skills: document.querySelector('.navbar__list__item__link__skills'),
+      contact: document.querySelector('.navbar__list__item__link__contact'),
+    };
+
+    document.addEventListener('scroll', () => {
       const scroll = window.scrollY;
 
-      sections.forEach((section) => {
-        const sectionsHeight = section.clientHeight;
-      });
+      scroll >= sectionsDistance.aboutMe && scroll < sectionsDistance.works
+        ? (navItem.aboutMe.style.color = 'var(--green)')
+        : (navItem.aboutMe.style.color = 'var(--gray)');
+
+      scroll >= sectionsDistance.works && scroll < sectionsDistance.skills
+        ? (navItem.works.style.color = 'var(--green)')
+        : (navItem.works.style.color = 'var(--gray)');
+
+      scroll >= sectionsDistance.skills && scroll < sectionsDistance.contact
+        ? (navItem.skills.style.color = 'var(--green)')
+        : (navItem.skills.style.color = 'var(--gray)');
+
+      scroll >= sectionsDistance.contact
+        ? (navItem.contact.style.color = 'var(--green)')
+        : (navItem.contact.style.color = 'var(--gray)');
     });
-    // const height = {
-    //   main: document.querySelector("#main").offsetHeight,
-    //   aboutMe: document.querySelector("#about-me").offsetHeight,
-    //   works: document.querySelector("#works").offsetHeight,
-    //   skills: document.querySelector("#skills").offsetHeight,
-    //   contact: document.querySelector("#contact").offsetHeight,
-    // };
-
-    // const distance = {
-    //   main: 0,
-    //   aboutMe: height.main,
-    //   works: height.main + height.aboutMe,
-    //   skills: height.main + height.aboutMe + height.works,
-    //   contact: height.main + height.aboutMe + height.works + height.skills,
-    // };
-
-    // const navItem = {
-    //   bars: document.querySelectorAll("line"),
-    //   aboutMe: document.querySelector(".navbar__list__item__link__about-me"),
-    //   works: document.querySelector(".navbar__list__item__link__works"),
-    //   theme: document.querySelector(".navbar__list__item__link__theme"),
-    //   skills: document.querySelector(".navbar__list__item__link__skills"),
-    //   contact: document.querySelector(".navbar__list__item__link__contact"),
-    // };
-
-    // document.addEventListener("scroll", () => {
-    //   const scroll = window.scrollY;
-
-    //   scroll >= distance.aboutMe && scroll < distance.works
-    //     ? (navItem.aboutMe.style.color = "var(--green)")
-    //     : (navItem.aboutMe.style.color = "var(--dark)");
-
-    //   scroll >= distance.works && scroll < distance.skills
-    //     ? (navItem.works.style.color = "var(--green)")
-    //     : (navItem.works.style.color = "var(--dark)");
-
-    //   scroll >= distance.skills && scroll < distance.contact
-    //     ? (navItem.skills.style.color = "var(--green)")
-    //     : (navItem.skills.style.color = "var(--dark)");
-
-    //   scroll >= distance.contact
-    //     ? (navItem.contact.style.color = "var(--green)")
-    //     : (navItem.contact.style.color = "var(--dark)");
-    // });
   }, []);
 
   const [darkTheme, setDarkTheme] = useState(true);
 
   function changeTheme() {
-    const html = document.querySelector("html");
+    const html = document.querySelector('html');
 
     setDarkTheme(!darkTheme);
 
     darkTheme
-      ? html.classList.add("dark-mode")
-      : html.classList.remove("dark-mode");
+      ? html.classList.add('dark-mode')
+      : html.classList.remove('dark-mode');
   }
 
   return (
@@ -101,7 +95,7 @@ function Nav() {
             className="navbar__list__item__link navbar__list__item__link__about-me"
             href="#about-me"
           >
-            {i18next.t("navbar.aboutMe")}
+            {i18next.t('navbar.aboutMe')}
           </a>
         </li>
         <li className="navbar__list__item">
@@ -109,7 +103,7 @@ function Nav() {
             className="navbar__list__item__link navbar__list__item__link__works"
             href="#works"
           >
-            {i18next.t("navbar.works")}
+            {i18next.t('navbar.works')}
           </a>
         </li>
         <li className="navbar__list__item">
@@ -118,7 +112,7 @@ function Nav() {
             className="navbar__list__item__link navbar__list__item__link__theme"
             href="#"
           >
-            {i18next.t("navbar.theme")}
+            {i18next.t('navbar.theme')}
           </span>
         </li>
         <li className="navbar__list__item">
@@ -126,7 +120,7 @@ function Nav() {
             className="navbar__list__item__link navbar__list__item__link__skills"
             href="#skills"
           >
-            {i18next.t("navbar.skills")}
+            {i18next.t('navbar.skills')}
           </a>
         </li>
         <li className="navbar__list__item">
@@ -134,7 +128,7 @@ function Nav() {
             className="navbar__list__item__link navbar__list__item__link__contact"
             href="#contact"
           >
-            {i18next.t("navbar.contact")}
+            {i18next.t('navbar.contact')}
           </a>
         </li>
         <svg

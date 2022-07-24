@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const NavStyles = styled.nav`
   position: fixed;
@@ -20,14 +20,14 @@ export const NavStyles = styled.nav`
         transform: scaleX(-1);
 
         line {
-          stroke: var(--dark);
+          stroke: var(--gray);
         }
       }
       &__item {
         list-style: none;
 
         &__link {
-          color: var(--dark);
+          color: var(--gray);
           font-size: 12px;
           line-height: 14px;
           font-weight: 600;
