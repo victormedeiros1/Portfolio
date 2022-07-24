@@ -69,6 +69,7 @@ export const Card = styled.div`
 `;
 
 export const CardTitle = styled.h3`
+  color: var(--dark);
   font-size: 20px;
   font-weight: 900;
   margin-bottom: 8px;
@@ -96,6 +97,7 @@ export const Borders = styled.div`
 export const CardBody = styled.div``;
 
 export const CardParagraph = styled.p`
+  color: var(--dark);
   font-size: 12px;
   margin-bottom: 8px;
 
@@ -111,6 +113,7 @@ export const CardFooter = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
+  color: var(--dark);
 
   @media (min-width: 800px) {
     flex-direction: row;
