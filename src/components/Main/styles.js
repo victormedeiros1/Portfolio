@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MainStyles = styled.main`
   display: flex;
@@ -16,7 +16,9 @@ export const MainStyles = styled.main`
       @media (min-width: 800px) {
         flex-direction: row;
       }
-
+      &__p {
+        visibility: hidden;
+      }
       &__left {
         display: flex;
         flex-direction: column;
@@ -37,7 +39,7 @@ export const MainStyles = styled.main`
           font-size: 60px;
           line-height: 60px;
           color: var(--dark);
-          font-family: "Concert One", sans-serif;
+          font-family: 'Concert One', sans-serif;
           margin: 30px 0 20px 0;
 
           @media (min-width: 800px) {
@@ -50,7 +52,7 @@ export const MainStyles = styled.main`
         &__h2 {
           width: 300px;
           color: var(--green);
-          font-family: "Concert One", sans-serif;
+          font-family: 'Concert One', sans-serif;
           margin-bottom: 50px;
           font-size: 30px;
           line-height: 30px;
@@ -62,7 +64,7 @@ export const MainStyles = styled.main`
         }
         &__discover {
           color: var(--dark);
-          font-family: "Poppins", sans-serif;
+          font-family: 'Poppins', sans-serif;
           font-weight: 700;
           font-size: 20px;
           line-height: 14px;
